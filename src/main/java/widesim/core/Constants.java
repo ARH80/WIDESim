@@ -57,5 +57,6 @@ public class Constants {
         public static final int EXECUTE_TASK_WITH_DATA = BASE + 15;
         public static final int DOWN_LINK_IS_FREE = BASE + 16;
         public static final int UP_LINK_IS_FREE = BASE + 17;
+        public static final int JOB_SUBMIT = BASE + 18;
     }
 }

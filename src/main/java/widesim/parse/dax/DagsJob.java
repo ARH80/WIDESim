@@ -3,15 +3,15 @@ package widesim.parse.dax;
 import java.util.List;
 import java.util.Map;
 
-public class Job {
+public class DagsJob {
     private final int id;
     private final long runtime;
     private final List<File> inputFiles;
     private final List<File> outputFiles;
 
-    private final Map<String, Long> fileMap;
+    private final Map<String, Double> fileMap;
 
-    public Job(int id, long runtime, List<File> inputFiles, List<File> outputFiles, Map<String, Long> fileMap) {
+    public DagsJob(int id, long runtime, List<File> inputFiles, List<File> outputFiles, Map<String, Double> fileMap) {
         this.id = id;
         this.runtime = runtime;
         this.inputFiles = inputFiles;
@@ -35,7 +35,7 @@ public class Job {
         return outputFiles;
     }
 
-    public Map<String, Long> getFileMap() {
+    public Map<String, Double> getFileMap() {
         return fileMap;
     }
 }

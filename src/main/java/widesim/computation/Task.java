@@ -17,6 +17,8 @@ public class Task extends Cloudlet {
     private final double deadLine;
     private final double entryTime;
     private final String workflowId;
+    private int priority;
+    private int depth;
 
     private SelectivityModel selectivityModel;
     private HashMap<Integer, Boolean> cycleToGeneratedData;
@@ -27,10 +29,10 @@ public class Task extends Cloudlet {
 
     private TaskState taskState;
 
-    private Map<String, Long> fileMap;
+    private Map<String, Double> fileMap;
     private Map<Integer, List<String>> neededFromParent;
 
-    public void setFileMap(Map<String, Long> fileMap) {
+    public void setFileMap(Map<String, Double> fileMap) {
         this.fileMap = fileMap;
     }
 
@@ -60,11 +62,11 @@ public class Task extends Cloudlet {
         this.assignedVmId = null;
     }
 
-    public Task(int cloudletId, long cloudletLength, int pesNumber, long cloudletFileSize, long cloudletOutputSize,
+    public Task(int cloudletId, long cloudletLength, int pesNumber, double cloudletFileSize, double cloudletOutputSize,
                 UtilizationModel utilizationModelCpu, UtilizationModel utilizationModelRam, UtilizationModel utilizationModelBw,
                 List<Data> inputFiles, double deadLine, double entryTime, String workflowName, SelectivityModel selectivityModel, ExecutionModel executionModel,
                 Double ram, Double bw, Integer assignedVmId) {
-        super(cloudletId, cloudletLength, pesNumber, cloudletFileSize, cloudletOutputSize, utilizationModelCpu, utilizationModelRam, utilizationModelBw);
+        super(cloudletId, cloudletLength, pesNumber, Math.round(cloudletFileSize), Math.round(cloudletOutputSize), utilizationModelCpu, utilizationModelRam, utilizationModelBw);
         this.inputFiles = inputFiles;
         this.deadLine = deadLine;
         this.workflowId = workflowName;
@@ -221,7 +223,7 @@ public class Task extends Cloudlet {
         return executionModel.nextExecutionTime(clock);
     }
 
-    public long getFileSize(String fileName) {
+    public double getFileSize(String fileName) {
         return this.fileMap.get(fileName);
     }
 
@@ -239,6 +241,22 @@ public class Task extends Cloudlet {
 
     public void setBw(Double bw) {
         this.bw = bw;
+    }
+
+    public int getPriority() {
+        return priority;
+    }
+
+    public void setPriority(int priority) {
+        this.priority = priority;
+    }
+
+    public int getDepth() {
+        return depth;
+    }
+
+    public void setDepth(int depth) {
+        this.depth = depth;
     }
 
     @Override

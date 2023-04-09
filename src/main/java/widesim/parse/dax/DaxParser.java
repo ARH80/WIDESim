@@ -31,7 +31,7 @@ public class DaxParser {
 
         Map<String, List<Integer>> fileToOwner = new HashMap<>();
 
-        List<Job> jobs = new ArrayList<>();
+        List<DagsJob> jobs = new ArrayList<>();
 
         for (int i = 0; i < jobNodes.getLength(); i++) {
             Node jobNode = jobNodes.item(i);
@@ -46,14 +46,14 @@ public class DaxParser {
             NodeList files = ((Element) jobNode).getElementsByTagName("uses");
             List<File> inputFiles = new ArrayList<>();
             List<File> outputFiles = new ArrayList<>();
-            Map<String, Long> fileMap = new HashMap<>();
+            Map<String, Double> fileMap = new HashMap<>();
 
             for (int j = 0; j < files.getLength(); j++) {
                 Node file = files.item(j);
                 NamedNodeMap fileAttributes = file.getAttributes();
                 String fileId = fileAttributes.getNamedItem("file").getNodeValue();
                 String type = fileAttributes.getNamedItem("link").getNodeValue();
-                long size = Long.parseLong(fileAttributes.getNamedItem("size").getNodeValue());
+                double size = Double.parseDouble(fileAttributes.getNamedItem("size").getNodeValue());
 
                 if (type.equals("input")) {
                     inputFiles.add(new File(fileId, size));
@@ -67,7 +67,7 @@ public class DaxParser {
                 }
             }
 
-            jobs.add(new Job(id, runtime, inputFiles, outputFiles, fileMap));
+            jobs.add(new DagsJob(id, runtime, inputFiles, outputFiles, fileMap));
         }
 
         // Parse child-parent relationship part
@@ -98,13 +98,13 @@ public class DaxParser {
         }
 
         List<Task> tasks = new ArrayList<>();
-        for (Job job : jobs) {
+        for (DagsJob job : jobs) {
             var task = new Task(
                     job.getId(),
                     job.getRuntime(),
                     1,
-                    job.getInputFiles().stream().map(File::getSize).reduce(1L, Long::sum),
-                    job.getOutputFiles().stream().map(File::getSize).reduce(1L, Long::sum),
+                    job.getInputFiles().stream().map(File::getSize).reduce(1.0, Double::sum),
+                    job.getOutputFiles().stream().map(File::getSize).reduce(1.0, Double::sum),
                     new UtilizationModelFull(),
                     new UtilizationModelFull(),
                     new UtilizationModelFull(),
