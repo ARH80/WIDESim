@@ -1,6 +1,7 @@
 package widesim.entity;
 
 import org.cloudbus.cloudsim.Log;
+import widesim.clustering.ClusteringParameters;
 import org.cloudbus.cloudsim.core.CloudSimTags;
 import org.cloudbus.cloudsim.core.SimEntity;
 import org.cloudbus.cloudsim.core.SimEvent;
@@ -12,12 +13,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-//        import org.workflowsim.clustering.BasicClustering;
-//        import org.workflowsim.clustering.BlockClustering;
-//        import org.workflowsim.clustering.HorizontalClustering;
-//        import org.workflowsim.clustering.VerticalClustering;
-//        import org.workflowsim.clustering.balancing.BalancedClustering;
-//        import org.workflowsim.utils.ClusteringParameters;
+import widesim.clustering.BasicClustering;
+import widesim.clustering.BlockClustering;
+import widesim.clustering.HorizontalClustering;
+import widesim.clustering.VerticalClustering;
+import widesim.clustering.balancing.BalancedClustering;
 //        import org.workflowsim.utils.Parameters;
 //        import org.workflowsim.utils.Parameters.ClassType;
 //        import org.workflowsim.utils.ReplicaCatalog;

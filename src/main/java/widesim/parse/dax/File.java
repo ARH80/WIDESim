@@ -2,9 +2,9 @@ package widesim.parse.dax;
 
 public class File {
     private final String id;
-    private final double size;
+    private final long size;
 
-    public File(String id, double size) {
+    public File(String id, Long size) {
         this.id = id;
         this.size = size;
     }
@@ -13,7 +13,7 @@ public class File {
         return id;
     }
 
-    public double getSize() {
+    public long getSize() {
         return size;
     }
 }

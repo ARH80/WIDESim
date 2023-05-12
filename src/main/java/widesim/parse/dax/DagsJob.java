@@ -9,9 +9,9 @@ public class DagsJob {
     private final List<File> inputFiles;
     private final List<File> outputFiles;
 
-    private final Map<String, Double> fileMap;
+    private final Map<String, Long> fileMap;
 
-    public DagsJob(int id, long runtime, List<File> inputFiles, List<File> outputFiles, Map<String, Double> fileMap) {
+    public DagsJob(int id, long runtime, List<File> inputFiles, List<File> outputFiles, Map<String, Long> fileMap) {
         this.id = id;
         this.runtime = runtime;
         this.inputFiles = inputFiles;
@@ -35,7 +35,7 @@ public class DagsJob {
         return outputFiles;
     }
 
-    public Map<String, Double> getFileMap() {
+    public Map<String, Long> getFileMap() {
         return fileMap;
     }
 }
