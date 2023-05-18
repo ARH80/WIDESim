@@ -69,13 +69,13 @@ public class Parser {
                 List<widesim.parse.dax.File> outputFiles = taskObj.getJSONArray(Tags.OUTPUT_FILES).toList().stream().map(file -> {
                     JSONObject fileObj = new JSONObject((Map<?, ?>) file);
                     String file_id = fileObj.getString(Tags.FILE_ID);
-                    double size = fileObj.getLong(Tags.SIZE);
+                    long size = fileObj.getLong(Tags.SIZE);
 
                     return new widesim.parse.dax.File(file_id, size);
                 }).collect(Collectors.toList());
 
                 // Map each file to its size
-                Map<String, Double> fileMap = new HashMap<>();
+                Map<String, Long> fileMap = new HashMap<>();
 
                 // Map each file to its owner
                 outputFiles.forEach(file -> {
@@ -92,9 +92,9 @@ public class Parser {
 
                 ExecutionModel executionModel = new PeriodicExecutionModel(getOrDefault(taskObj, Tags.EXECUTION_PERIOD, 1.0, Double.class));
 
-                double inputFileSize = inputFiles.stream().map(widesim.parse.dax.File::getSize).reduce(0.0, Double::sum);
+                long inputFileSize = inputFiles.stream().map(widesim.parse.dax.File::getSize).reduce(0L, Long::sum);
 
-                double outputFileSize = outputFiles.stream().map(widesim.parse.dax.File::getSize).reduce(0.0, Double::sum);
+                long outputFileSize = outputFiles.stream().map(widesim.parse.dax.File::getSize).reduce(0L, Long::sum);
 
                 double entry_time = getOrDefault(taskObj, Tags.ENTRY_TIME, Default.TASK.ENTRY_TIME, Double.class);
                 double deadLine = getOrDefault(taskObj, Tags.DEAD_LINE, Default.TASK.DEAD_LINE, Double.class);
@@ -152,8 +152,8 @@ public class Parser {
         public int taskId;
         public long runtime;
         public int pes;
-        public double inputFileSize;
-        public double outputFileSize;
+        public long inputFileSize;
+        public long outputFileSize;
         public UtilizationModel cpuModel;
         public UtilizationModel ramModel;
         public UtilizationModel bwModel;
@@ -167,12 +167,12 @@ public class Parser {
         public Double ram;
         public Double bw;
         public Integer vmId;
-        public Map<String, Double> fileMap;
+        public Map<String, Long> fileMap;
 
-        public TaskInfo(int taskId, long runtime, int pes, double inputFileSize, double outputFileSize, UtilizationModel cpuModel,
+        public TaskInfo(int taskId, long runtime, int pes, long inputFileSize, long outputFileSize, UtilizationModel cpuModel,
                         UtilizationModel ramModel, UtilizationModel bwModel, List<widesim.parse.dax.File> inputFiles,
                         List<widesim.parse.dax.File> outputFiles, double deadline, double entryTime, String workflowId,
-                        SelectivityModel selectivityModel, ExecutionModel executionModel, Double ram, Double bw, Integer vmId, Map<String, Double> fileMap) {
+                        SelectivityModel selectivityModel, ExecutionModel executionModel, Double ram, Double bw, Integer vmId, Map<String, Long> fileMap) {
             this.taskId = taskId;
             this.runtime = runtime;
             this.pes = pes;

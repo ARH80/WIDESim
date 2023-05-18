@@ -46,14 +46,14 @@ public class DaxParser {
             NodeList files = ((Element) jobNode).getElementsByTagName("uses");
             List<File> inputFiles = new ArrayList<>();
             List<File> outputFiles = new ArrayList<>();
-            Map<String, Double> fileMap = new HashMap<>();
+            Map<String, Long> fileMap = new HashMap<>();
 
             for (int j = 0; j < files.getLength(); j++) {
                 Node file = files.item(j);
                 NamedNodeMap fileAttributes = file.getAttributes();
                 String fileId = fileAttributes.getNamedItem("file").getNodeValue();
                 String type = fileAttributes.getNamedItem("link").getNodeValue();
-                double size = Double.parseDouble(fileAttributes.getNamedItem("size").getNodeValue());
+                long size = Long.parseLong(fileAttributes.getNamedItem("size").getNodeValue());
 
                 if (type.equals("input")) {
                     inputFiles.add(new File(fileId, size));
@@ -103,8 +103,8 @@ public class DaxParser {
                     job.getId(),
                     job.getRuntime(),
                     1,
-                    job.getInputFiles().stream().map(File::getSize).reduce(1.0, Double::sum),
-                    job.getOutputFiles().stream().map(File::getSize).reduce(1.0, Double::sum),
+                    job.getInputFiles().stream().map(File::getSize).reduce(1L, Long::sum),
+                    job.getOutputFiles().stream().map(File::getSize).reduce(1L, Long::sum),
                     new UtilizationModelFull(),
                     new UtilizationModelFull(),
                     new UtilizationModelFull(),

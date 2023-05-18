@@ -27,9 +27,24 @@ public class Job extends Task {
 
     public Job(
             final int jobId,
-            final long jobLength) {
+            final long jobLength,
+            final String workflowName) {
 
-        super(jobId, jobLength, 1, 0, 0, new UtilizationModelFull(), new UtilizationModelFull(), new UtilizationModelFull(), null, null, null, null);
+        super(
+                jobId,
+                jobLength,
+                1,
+                0,    //TODO: take care of this 
+                0,  //TODO: take care of this
+                new UtilizationModelFull(),
+                new UtilizationModelFull(),
+                new UtilizationModelFull(),
+                null,
+                Double.MAX_VALUE,
+                0,
+                workflowName
+            );
+
         this.taskList = new ArrayList<>();
     }
 

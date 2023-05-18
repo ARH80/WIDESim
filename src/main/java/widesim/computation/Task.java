@@ -29,10 +29,10 @@ public class Task extends Cloudlet {
 
     private TaskState taskState;
 
-    private Map<String, Double> fileMap;
+    private Map<String, Long> fileMap;
     private Map<Integer, List<String>> neededFromParent;
 
-    public void setFileMap(Map<String, Double> fileMap) {
+    public void setFileMap(Map<String, Long> fileMap) {
         this.fileMap = fileMap;
     }
 
@@ -62,7 +62,7 @@ public class Task extends Cloudlet {
         this.assignedVmId = null;
     }
 
-    public Task(int cloudletId, long cloudletLength, int pesNumber, double cloudletFileSize, double cloudletOutputSize,
+    public Task(int cloudletId, long cloudletLength, int pesNumber, Long cloudletFileSize, Long cloudletOutputSize,
                 UtilizationModel utilizationModelCpu, UtilizationModel utilizationModelRam, UtilizationModel utilizationModelBw,
                 List<Data> inputFiles, double deadLine, double entryTime, String workflowName, SelectivityModel selectivityModel, ExecutionModel executionModel,
                 Double ram, Double bw, Integer assignedVmId) {
@@ -136,8 +136,8 @@ public class Task extends Cloudlet {
         return new ArrayList<>(this.parents);
     }
 
-    public double getTotalInputDataSize() {
-        return this.inputFiles.stream().map(Data::getSize).reduce(0.0, Double::sum);
+    public long getTotalInputDataSize() {
+        return this.inputFiles.stream().map(Data::getSize).reduce(0L, Long::sum);
     }
 
     public int getCycle() {
@@ -223,7 +223,7 @@ public class Task extends Cloudlet {
         return executionModel.nextExecutionTime(clock);
     }
 
-    public double getFileSize(String fileName) {
+    public long getFileSize(String fileName) {
         return this.fileMap.get(fileName);
     }
 
