@@ -4,6 +4,7 @@ import widesim.computation.Task;
 import widesim.core.Constants;
 import widesim.core.Logger;
 import widesim.failure.FailureGenerator;
+import widesim.mapper.FCFSTaskToVMMapper;
 import widesim.mapper.TaskToVmMapper;
 import widesim.mapper.VmToFogDeviceMapper;
 import widesim.message.*;
@@ -220,6 +221,7 @@ public class FogBroker extends PowerDatacenterBroker {
 
     protected void processTaskIsDone(SimEvent event) {
         Task task = (Task) event.getData();
+        ((FCFSTaskToVMMapper) this.taskToVmMapper).releaseVM(task.getVmId());
         log("Received task completion msg for Task(%s) from FogDevice(%s)", task.getTaskId(), event.getSource());
 
 
@@ -389,6 +391,8 @@ public class FogBroker extends PowerDatacenterBroker {
 
             // vm for current task
             Integer mappedVmId = this.taskToVm.get(task.getTaskId());
+            if (mappedVmId == null)
+                continue;
 
             // if vm is successfully created, and all parent tasks are complete,
             // dispatch the task the to fog device which contains the vm
