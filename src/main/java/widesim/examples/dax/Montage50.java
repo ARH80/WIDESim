@@ -1,20 +1,20 @@
 package widesim.examples.dax;
 
+import org.cloudbus.cloudsim.Vm;
+import org.cloudbus.cloudsim.core.CloudSim;
+import org.cloudbus.cloudsim.power.PowerVm;
 import widesim.computation.Task;
 import widesim.computation.Workflow;
 import widesim.core.Logger;
 import widesim.entity.FogBroker;
 import widesim.entity.TaskManager;
 import widesim.entity.WorkflowEngine;
-import widesim.mapper.SimpleTaskToVmMapper;
+import widesim.mapper.FCFSTaskToVMMapper;
 import widesim.mapper.SimpleVmToFogDeviceMapper;
 import widesim.parse.dax.DaxParser;
 import widesim.parse.topology.Parser;
 import widesim.parse.topology.PostProcessor;
 import widesim.provision.SimpleVmProvisioner;
-import org.cloudbus.cloudsim.power.PowerVm;
-import org.cloudbus.cloudsim.Vm;
-import org.cloudbus.cloudsim.core.CloudSim;
 
 import java.io.File;
 import java.util.Calendar;
@@ -39,7 +39,7 @@ public class Montage50 {
         var convertedRoutingTable = PostProcessor.convertNameToId(fogDevices, routingTable);
 
         var vms = deviceAndVms.getSecond();
-        var fogBroker = new FogBroker("broker", new SimpleVmProvisioner(), new SimpleVmToFogDeviceMapper(), new SimpleTaskToVmMapper(), 10L, 10L, convertedRoutingTable, fogDevices);
+        var fogBroker = new FogBroker("broker", new SimpleVmProvisioner(), new SimpleVmToFogDeviceMapper(), new FCFSTaskToVMMapper(), 10L, 10L, convertedRoutingTable, fogDevices);
         vms.forEach(vm -> {
             vm.setUid(PowerVm.getUid(fogBroker.getId(), vm.getId()));
             vm.setUserId(fogBroker.getId());

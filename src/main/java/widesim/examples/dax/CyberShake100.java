@@ -10,7 +10,6 @@ import widesim.entity.FogBroker;
 import widesim.entity.TaskManager;
 import widesim.entity.WorkflowEngine;
 import widesim.mapper.FCFSTaskToVMMapper;
-import widesim.mapper.SimpleTaskToVmMapper;
 import widesim.mapper.SimpleVmToFogDeviceMapper;
 import widesim.parse.dax.DaxParser;
 import widesim.parse.topology.Parser;
