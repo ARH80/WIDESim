@@ -6,7 +6,7 @@ import widesim.computation.Task;
 
 import java.util.*;
 
-public class FCFSTaskToVMMapper implements TaskToVmMapper{
+public class FCFSTaskToVMMapper implements TaskToVmMapper {
     HashSet<Integer> usedVMs;
 
     public FCFSTaskToVMMapper() {
