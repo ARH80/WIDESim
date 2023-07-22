@@ -221,7 +221,7 @@ public class FogBroker extends PowerDatacenterBroker {
 
     protected void processTaskIsDone(SimEvent event) {
         Task task = (Task) event.getData();
-        ((FCFSTaskToVMMapper) this.taskToVmMapper).releaseVM(task.getVmId());
+        ((FogVm) vmList.get(task.getVmId())).setBusy(false);
         log("Received task completion msg for Task(%s) from FogDevice(%s)", task.getTaskId(), event.getSource());
 
 
