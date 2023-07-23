@@ -300,7 +300,7 @@ public class FogBroker extends PowerDatacenterBroker {
             }
 
             // If all dispatched tasks are complete
-            if (this.dispatchedTasks.size() == this.completedTasks.size()) {
+//            if (this.dispatchedTasks.size() == this.completedTasks.size()) {
                 log("All dispatched tasks are complete");
 
                 var triple = this.vmProvisioner.provision(
@@ -361,7 +361,7 @@ public class FogBroker extends PowerDatacenterBroker {
                     log("Trying to dispatch tasks...");
                     dispatchTasks();
                 }
-            }
+//            }
         }
     }
 
@@ -392,7 +392,7 @@ public class FogBroker extends PowerDatacenterBroker {
             // vm for current task
             Integer mappedVmId = this.taskToVm.get(task.getTaskId());
             if (mappedVmId == null)
-                continue;
+                break;
 
             // if vm is successfully created, and all parent tasks are complete,
             // dispatch the task the to fog device which contains the vm
