@@ -415,7 +415,9 @@ public class FogBroker extends PowerDatacenterBroker {
                 // if task does not have any parent, its data must be stage in
                 if (task.isRoot()) {
 //                    double delay = (double) task.getTotalInputDataSize() / this.upLinkBw;
-                    double delay = 0.11;
+                    double delay = 0;
+                    if (CloudSim.clock() == 0)
+                        delay = 0.11;
                     log("Sending STAGE_IN data for Task(%s) to FogDevice(%s) with delay: %.2f", task.getTaskId(), dstFogDeviceId, delay);
                     send(
                             dstFogDeviceId,
