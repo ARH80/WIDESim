@@ -1,8 +1,11 @@
 package widesim.entity;
 
+import org.cloudbus.cloudsim.Cloudlet;
+import org.cloudbus.cloudsim.core.CloudSim;
 import widesim.computation.Task;
 import widesim.core.Constants;
 import widesim.core.Logger;
+import widesim.failure.FailureGenerator;
 import widesim.message.IncomingTaskMsg;
 import widesim.message.TaskIsDoneMsg;
 import org.cloudbus.cloudsim.core.SimEntity;
@@ -51,6 +54,7 @@ public class WorkflowEngine extends SimEntity {
 
         log("Task(%s) of workflow(%s) received", task.getTaskId(), task.getWorkflowId());
 
+
         tasks.put(task.getTaskId(), task);
 
         if (completedTasks.containsAll(task.getParents())) {
@@ -68,7 +72,20 @@ public class WorkflowEngine extends SimEntity {
 
         log("Task(%s) received as complete", task.getTaskId());
 
-        completedTasks.add(task.getTaskId());
+        if (task.getStatus() == Cloudlet.FAILED) {
+            log("Task(%s) failed. Adding it to waiting queue...", task.getTaskId());
+            task.addFailedExecution(CloudSim.clock());
+            try {
+                task.setCloudletStatus(Cloudlet.CREATED);
+                task.setExecStartTime(-1);
+            } catch (Exception e) {
+                log("Error while setting task status to READY");
+            }
+//            waitingTasks.add(task.getTaskId());
+            schedule(this.getId(), 0, Constants.MsgTag.INCOMING_TASK, new IncomingTaskMsg(task));
+        } else {
+            completedTasks.add(task.getTaskId());
+        }
 
         for (Iterator<Integer> iterator = waitingTasks.iterator(); iterator.hasNext(); ) {
             Integer waitingTaskId = iterator.next();
@@ -80,7 +97,6 @@ public class WorkflowEngine extends SimEntity {
                 sendNow(brokerId, Constants.MsgTag.INCOMING_TASK, new IncomingTaskMsg(waitingTask));
             }
         }
-
     }
 
     private void log(String formatted, Object... args) {
