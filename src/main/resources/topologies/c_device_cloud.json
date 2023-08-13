@@ -1,8 +1,32 @@
 {
   "fog_devices": [
     {
+      "device_id": "cloud_device_0",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "car" },
+        { "neighbor_id": "camera" },
+        { "neighbor_id": "drone" },
+        { "neighbor_id": "phone" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 1024,
+          "bw": 500,
+          "pes": [
+            {
+              "mips": 6000,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
       "device_id": "phone",
       "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
         { "neighbor_id": "camera" },
         { "neighbor_id": "car" }
       ],
@@ -10,7 +34,7 @@
         {
           "host_id": 0,
           "ram": 64,
-          "bw": 4000,
+          "bw": 4500,
           "pes": [
             {
               "mips": 500,
@@ -27,6 +51,7 @@
     {
       "device_id": "camera",
       "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
         { "neighbor_id": "phone" },
         { "neighbor_id": "car" },
         { "neighbor_id": "drone" }
@@ -35,7 +60,7 @@
         {
           "host_id": 0,
           "ram": 64,
-          "bw": 4000,
+          "bw": 4500,
           "pes": [
             {
               "mips": 500,
@@ -48,6 +73,7 @@
     {
       "device_id": "car",
       "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
         { "neighbor_id": "phone" },
         { "neighbor_id": "camera" },
         { "neighbor_id": "drone" }
@@ -56,7 +82,7 @@
         {
           "host_id": 0,
           "ram": 64,
-          "bw": 4000,
+          "bw": 4500,
           "pes": [
             {
               "mips": 500,
@@ -69,6 +95,7 @@
     {
       "device_id": "drone",
       "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
         { "neighbor_id": "car" },
         { "neighbor_id": "camera" }
       ],
@@ -76,7 +103,7 @@
         {
           "host_id": 0,
           "ram": 64,
-          "bw": 4000,
+          "bw": 4500,
           "pes": [
             {
               "mips": 500,
