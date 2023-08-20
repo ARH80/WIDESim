@@ -4,9 +4,9 @@
       "workflow_id": "workflow_0",
       "tasks": [
         {
-          "task_id": 1,
+          "task_id": 0,
           "runtime": 1000,
-          "vm_id": 1,
+          "vm_id": 0,
           "input_files": [
             {
               "file_id": "input_1",
