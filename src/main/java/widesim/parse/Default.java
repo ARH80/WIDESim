@@ -42,7 +42,7 @@ public class Default {
         public static final double MIPS = Constants.MetricUnit.KILO;
         public static final int NUM_OF_PES = 1;
         public static final int RAM = Constants.PowOfTwo.NINE;
-        public static final long BW = Constants.PowOfTwo.TEN;
+        public static final long BW = Constants.PowOfTwo.FIVE;
         public static final VmmEnum VMM = VmmEnum.XEN;
         public static final CloudletSchedulerEnum CLOUDLET_SCHEDULER = CloudletSchedulerEnum.TIME_SHARED;
     }
