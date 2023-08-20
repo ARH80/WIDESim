@@ -52,15 +52,15 @@
   ],
   "vms": [
     {
-      "vm_id": 1,
+      "vm_id": 0,
       "fog_device_id": "t1"
     },
     {
-      "vm_id": 2,
+      "vm_id": 1,
       "fog_device_id": "t2"
     },
     {
-      "vm_id": 4,
+      "vm_id": 2,
       "fog_device_id": "t4"
     }
   ]

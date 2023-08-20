@@ -6,7 +6,7 @@
         {
           "task_id": 1,
           "runtime": 1000,
-          "vm_id": 1,
+          "vm_id": 0,
           "input_files": [
             {
               "file_id": "input_1",
@@ -23,7 +23,7 @@
         {
           "task_id": 2,
           "runtime": 2000,
-          "vm_id": 2,
+          "vm_id": 1,
           "input_files": [
             {
               "file_id": "output_1",
@@ -40,7 +40,7 @@
         {
           "task_id": 4,
           "runtime": 4000,
-          "vm_id": 4,
+          "vm_id": 2,
           "input_files": [
             {
               "file_id": "output_2",

@@ -220,6 +220,7 @@ public class FogBroker extends PowerDatacenterBroker {
 
     protected void processTaskIsDone(SimEvent event) {
         Task task = (Task) event.getData();
+        ((FogVm) vmList.get(task.getVmId())).setBusy(false);
         log("Received task completion msg for Task(%s) from FogDevice(%s)", task.getTaskId(), event.getSource());
 
 
@@ -298,7 +299,7 @@ public class FogBroker extends PowerDatacenterBroker {
             }
 
             // If all dispatched tasks are complete
-            if (this.dispatchedTasks.size() == this.completedTasks.size()) {
+//            if (this.dispatchedTasks.size() == this.completedTasks.size()) {
                 log("All dispatched tasks are complete");
 
                 var triple = this.vmProvisioner.provision(
@@ -359,7 +360,7 @@ public class FogBroker extends PowerDatacenterBroker {
                     log("Trying to dispatch tasks...");
                     dispatchTasks();
                 }
-            }
+//            }
         }
     }
 
@@ -389,6 +390,8 @@ public class FogBroker extends PowerDatacenterBroker {
 
             // vm for current task
             Integer mappedVmId = this.taskToVm.get(task.getTaskId());
+            if (mappedVmId == null)
+                break;
 
             // if vm is successfully created, and all parent tasks are complete,
             // dispatch the task the to fog device which contains the vm
@@ -411,7 +414,9 @@ public class FogBroker extends PowerDatacenterBroker {
                 // if task does not have any parent, its data must be stage in
                 if (task.isRoot()) {
 //                    double delay = (double) task.getTotalInputDataSize() / this.upLinkBw;
-                    double delay = 0.11;
+                    double delay = 0;
+                    if (CloudSim.clock() == 0)
+                        delay = 0.11;
                     log("Sending STAGE_IN data for Task(%s) to FogDevice(%s) with delay: %.2f", task.getTaskId(), dstFogDeviceId, delay);
                     send(
                             dstFogDeviceId,
