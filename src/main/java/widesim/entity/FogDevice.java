@@ -232,8 +232,8 @@ public class FogDevice extends PowerDatacenter {
 
         int nextHopId = this.nameToId.get(nextHopName);
 
-        log("Sending data of Task(%s) on Cycle(%s) to FogDevice(%s) with Delay(%s)", stageOutDataMsg.getTaskId(), this.tasks.get(stageOutDataMsg.getTaskId()).getCycle(), nextHopId, stageOutDataMsg.isData() ? (double) aggregatedOutputSize / this.upLinkBw : 0);
-        double delay = stageOutDataMsg.isData() ? (double) aggregatedOutputSize / this.upLinkBw : 0;
+        log("Sending data of Task(%s) on Cycle(%s) to FogDevice(%s) with Delay(%s)", stageOutDataMsg.getTaskId(), this.tasks.get(stageOutDataMsg.getTaskId()).getCycle(), nextHopId, stageOutDataMsg.isData() ? (double) aggregatedOutputSize / (double) Consts.MILLION / this.upLinkBw : 0);
+        double delay = stageOutDataMsg.isData() ? (double) aggregatedOutputSize / (double) Consts.MILLION / this.upLinkBw : 0;
         FogToFogMsg msg = new FogToFogMsg(
                 stageOutDataMsg.getDstFogDeviceId(),
                 stageOutDataMsg.getTaskId(),
@@ -274,7 +274,7 @@ public class FogDevice extends PowerDatacenter {
 
         log("Downloading data from fog device: %s", event.getSource());
 
-        double delay = fogToFogMsg.isData() ? (double) fogToFogMsg.getData() / this.downLinkBw : 0;
+        double delay = fogToFogMsg.isData() ? (double) fogToFogMsg.getData() / (double) Consts.MILLION / this.downLinkBw : 0;
         if (isDownLinkBusy) {
             downLinkQueue.add(new NetworkRequest(
                getId(),
@@ -360,7 +360,7 @@ public class FogDevice extends PowerDatacenter {
 
             int nextHopId = this.nameToId.get(nextHopName);
 
-            double delay = (double) fogToFogMsg.getData() / this.upLinkBw;
+            double delay = (double) fogToFogMsg.getData() / (double) Consts.MILLION / this.upLinkBw;
 
             if (isUpLinkBusy) {
                 upLinkQueue.add(new NetworkRequest(
@@ -447,7 +447,7 @@ public class FogDevice extends PowerDatacenter {
             }
         }
 
-//        double delay = ((double) executeTaskMsg.getTask().getTotalInputDataSize() / this.downLinkBw) + 0;
+//        double delay = ((double) executeTaskMsg.getTask().getTotalInputDataSize() / (double) Consts.MILLION / this.downLinkBw) + 0;
         double delay = 0.0;
         if (isDownLinkBusy) {
             downLinkQueue.add(new NetworkRequest(

@@ -48,7 +48,8 @@
       "neighbors": [
         { "neighbor_id": "cloud_device_0" },
         { "neighbor_id": "edge_and_end_device_0" },
-        { "neighbor_id": "drone" }
+        { "neighbor_id": "drone_0" },
+        { "neighbor_id": "drone_1" }
       ],
       "hosts": [
         {
@@ -166,7 +167,60 @@
   ],
   "vms": [
     {
-      "vm_id": 0
+      "vm_id": 0,
+      "fog_device_id": "cloud_device_0",
+      "ram": 1024,
+      "bw": 512,
+      "mips": 6000
+    },
+    {
+      "vm_id": 1,
+      "fog_device_id": "edge_and_end_device_0",
+      "ram": 64,
+      "bw": 5000,
+      "mips": 500
+    },
+    {
+      "vm_id": 2,
+      "fog_device_id": "edge_and_end_device_1",
+      "ram": 64,
+      "bw": 5000,
+      "mips": 500
+    },
+    {
+      "vm_id": 3,
+      "fog_device_id": "phone",
+      "ram": 64,
+      "bw": 5000,
+      "mips": 1000
+    },
+    {
+      "vm_id": 4,
+      "fog_device_id": "camera",
+      "ram": 64,
+      "bw": 5000,
+      "mips": 500
+    },
+    {
+      "vm_id": 5,
+      "fog_device_id": "car",
+      "ram": 64,
+      "bw": 5000,
+      "mips": 500
+    },
+    {
+      "vm_id": 6,
+      "fog_device_id": "drone_0",
+      "ram": 64,
+      "bw": 5000,
+      "mips": 500
+    },
+    {
+      "vm_id": 7,
+      "fog_device_id": "drone_1",
+      "ram": 64,
+      "bw": 5000,
+      "mips": 500
     }
   ]
 }
