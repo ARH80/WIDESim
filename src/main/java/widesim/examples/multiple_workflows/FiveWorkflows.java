@@ -1,5 +1,7 @@
 package widesim.examples.multiple_workflows;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
 import java.util.stream.IntStream;
@@ -47,7 +49,7 @@ public class FiveWorkflows {
         });
         fogBroker.submitVmList(vms);
 
-        String[] workflow_list = {
+        String[] strList = {
             "CyberShake_30",
             "Epigenomics_24",
             "Inspiral_30",
@@ -55,10 +57,15 @@ public class FiveWorkflows {
             "Sipht_30"
         };
 
-        var daxParser = new DaxParser("src/main/resources/dax/CyberShake_30.xml");
-        var workflows = List.of(daxParser.buildWorkflow());
+        List<Workflow> workflowList = new ArrayList<>();
+        
+        for (String name : strList) {
+            var daxParser = new DaxParser(String.format("src/main/resources/dax/%s.xml", name));
+            var workflow = List.of(daxParser.buildWorkflow());
+            workflowList.addAll(workflow);
+        }
 
-        for (Workflow workflow: workflows) {
+        for (Workflow workflow: workflowList) {
 
             var analyzer = widesim.parse.workflow.PostProcessor.buildWorkflowAnalyzer(workflow);
             widesim.parse.workflow.PostProcessor.isWorkflowValid(analyzer);
@@ -67,7 +74,7 @@ public class FiveWorkflows {
         var workflowEngine = new WorkflowEngine(fogBroker.getId());
         fogBroker.setWorkflowEngineId(workflowEngine.getId());
 
-        var taskManager = new TaskManager(workflowEngine.getId(), workflows);
+        var taskManager = new TaskManager(workflowEngine.getId(), workflowList);
 
         CloudSim.startSimulation();
 
@@ -76,8 +83,6 @@ public class FiveWorkflows {
         List<Task> tasks = fogBroker.getReceivedTasks();
         for (Vm vm : fogBroker.getVmList()) {
             PowerVm newvm = (PowerVm) vm;
-            // System.out.println(vm.getTotalUtilizationOfCpu(0));
-            // System.out.println(vm.get(0));
             System.out.println(newvm.getUtilizationMean());
         }
         IntStream.range(0, fogBroker.getMaximumCycle() + 1).forEach(cycle -> {
