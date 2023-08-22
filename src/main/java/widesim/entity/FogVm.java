@@ -1,7 +1,10 @@
 package widesim.entity;
 
 import org.cloudbus.cloudsim.CloudletScheduler;
+import org.cloudbus.cloudsim.core.CloudSim;
 import org.cloudbus.cloudsim.power.PowerVm;
+
+import java.util.List;
 
 public class FogVm extends PowerVm {
     private String assignedFogDeviceId;
@@ -43,5 +46,22 @@ public class FogVm extends PowerVm {
 
     public void setBusy(boolean busy) {
         this.busy = busy;
+    }
+
+    @Override
+    public double updateVmProcessing(double currentTime, List<Double> mipsShare) {
+        if (currentTime > getPreviousTime()) {
+            double utilization = getTotalUtilizationOfCpu(getCloudletScheduler().getPreviousTime());
+            if (CloudSim.clock() != 0 || utilization != 0) {
+                addUtilizationHistoryValue(utilization);
+            }
+            setPreviousTime(currentTime);
+        }
+
+        double time = 0.0;
+        if (mipsShare != null) {
+            time = getCloudletScheduler().updateVmProcessing(currentTime, mipsShare);
+        }
+        return time;
     }
 }
