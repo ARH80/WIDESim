@@ -142,7 +142,7 @@ public class DaxParser {
         return new Workflow(tasks, workflowName);
     }
 
-    public Workflow buildMultipleWorkflow(int startId, int startFile) {
+    public Pair<Workflow, Integer> buildMultipleWorkflow(int startId, int startFile) {
         NodeList jobNodes = workflowDax.getElementsByTagName("job");
 
         Map<String, List<Integer>> fileToOwner = new HashMap<>();
@@ -211,8 +211,6 @@ public class DaxParser {
 
         List<Task> tasks = new ArrayList<>();
         for (Job job : jobs) {
-            System.out.println("JIIIIIIIZ");
-            System.out.println(job.getId());
             var task = new Task(
                     job.getId(),
                     job.getRuntime(),
@@ -251,6 +249,6 @@ public class DaxParser {
             tasks.add(task);
         }
 
-        return new Workflow(tasks, workflowName);
+        return new Pair<Workflow, Integer> (new Workflow(tasks, workflowName), jobNodes.getLength());
     }
 }

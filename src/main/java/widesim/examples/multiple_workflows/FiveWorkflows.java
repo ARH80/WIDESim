@@ -6,6 +6,7 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.stream.IntStream;
 
+import org.jgrapht.alg.util.Pair;
 import org.cloudbus.cloudsim.Vm;
 import org.cloudbus.cloudsim.core.CloudSim;
 import org.cloudbus.cloudsim.power.PowerVm;
@@ -57,18 +58,15 @@ public class FiveWorkflows {
             "Sipht_30"
         };
 
-        int[] sizes = {
-            0, 30, 54, 79, 109
-        };
-
+        int startId = 0;
         List<Workflow> workflowList = new ArrayList<>();
-        int i = 0;
+
         for (String name : strList) {
             var daxParser = new DaxParser(String.format("src/main/resources/dax/%s.xml", name));
-            var startId = sizes[i];
-            var workflow = List.of(daxParser.buildMultipleWorkflow(startId, 0));
+            Pair<Workflow, Integer> wf = daxParser.buildMultipleWorkflow(startId, 0);
+            var workflow = List.of(wf.getFirst());
             workflowList.addAll(workflow);
-            i+=1;
+            startId+=wf.getSecond();
         }
 
         for (Workflow workflow: workflowList) {
