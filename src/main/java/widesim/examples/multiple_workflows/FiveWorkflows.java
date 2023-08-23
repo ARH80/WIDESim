@@ -57,16 +57,21 @@ public class FiveWorkflows {
             "Sipht_30"
         };
 
+        int[] sizes = {
+            0, 30, 54, 79, 109
+        };
+
         List<Workflow> workflowList = new ArrayList<>();
-        
+        int i = 0;
         for (String name : strList) {
             var daxParser = new DaxParser(String.format("src/main/resources/dax/%s.xml", name));
-            var workflow = List.of(daxParser.buildWorkflow());
+            var startId = sizes[i];
+            var workflow = List.of(daxParser.buildMultipleWorkflow(startId, 0));
             workflowList.addAll(workflow);
+            i+=1;
         }
 
         for (Workflow workflow: workflowList) {
-
             var analyzer = widesim.parse.workflow.PostProcessor.buildWorkflowAnalyzer(workflow);
             widesim.parse.workflow.PostProcessor.isWorkflowValid(analyzer);
         }
