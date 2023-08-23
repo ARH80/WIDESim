@@ -26,6 +26,15 @@ public class DaxParser {
         this.workflowName = file.getName();
     }
 
+    public DaxParser(String filePath, int idx) throws ParserConfigurationException, IOException, SAXException {
+        java.io.File file = new java.io.File(filePath);
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        DocumentBuilder db = dbf.newDocumentBuilder();
+
+        this.workflowDax = db.parse(file);
+        this.workflowName = file.getName() + "_" + Integer.toString(idx);
+    }
+
     public Workflow buildWorkflow() {
         NodeList jobNodes = workflowDax.getElementsByTagName("job");
 
@@ -99,8 +108,6 @@ public class DaxParser {
 
         List<Task> tasks = new ArrayList<>();
         for (Job job : jobs) {
-            System.out.println("JIIIIIIIZ");
-            System.out.println(job.getId());
             var task = new Task(
                     job.getId(),
                     job.getRuntime(),
