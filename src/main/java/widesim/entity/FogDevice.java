@@ -10,6 +10,7 @@ import org.cloudbus.cloudsim.core.CloudSimTags;
 import org.cloudbus.cloudsim.core.SimEvent;
 import org.cloudbus.cloudsim.power.PowerDatacenter;
 import org.cloudbus.cloudsim.power.PowerVm;
+import org.cloudbus.cloudsim.power.PowerHost;
 import org.jgrapht.alg.util.Pair;
 
 import java.util.*;
@@ -509,18 +510,62 @@ public class FogDevice extends PowerDatacenter {
         // R: for term is to allow loop at simulation start. Otherwise, one initial
         // simulation step is skipped and schedulers are not properly initialized
         //this is a bug of CloudSim if the runtime is smaller than 0.1 (now is 0.01) it doesn't work at all
+        double timeDiff = CloudSim.clock() - getLastProcessTime();
+		double timeFrameDatacenterEnergy = 0.0;
+
         if (CloudSim.clock() < 0.111 || CloudSim.clock() > getLastProcessTime() + 0.01) {
-            List<? extends Host> list = getVmAllocationPolicy().getHostList();
+            List<PowerHost> list = getVmAllocationPolicy().getHostList();
             double smallerTime = Double.MAX_VALUE;
             // for each host...
-            for (Host host : list) {
+            for (PowerHost host : list) {
                 // inform VMs to update processing
                 double time = host.updateVmsProcessing(CloudSim.clock());
                 // what time do we expect that the next cloudlet will finish?
                 if (time < smallerTime) {
                     smallerTime = time;
                 }
+
+                Log.formatLine(
+					"%.2f: [Host #%d] utilization is %.2f%%",
+					CloudSim.clock(),
+					host.getId(),
+					host.getUtilizationOfCpu() * 100);
             }
+
+            if (timeDiff > 0) {
+                Log.formatLine(
+                        "\nEnergy consumption for the last time frame from %.2f to %.2f:",
+                        getLastProcessTime(),
+                        CloudSim.clock());
+
+                for (PowerHost host : this.<PowerHost> getHostList()) {
+                    double previousUtilizationOfCpu = host.getPreviousUtilizationOfCpu();
+                    double utilizationOfCpu = host.getUtilizationOfCpu();
+                    double timeFrameHostEnergy = host.getEnergyLinearInterpolation(
+                            previousUtilizationOfCpu,
+                            utilizationOfCpu,
+                            timeDiff);
+                    timeFrameDatacenterEnergy += timeFrameHostEnergy;
+
+                    Log.printLine();
+                    Log.formatLine(
+                            "%.2f: [Host #%d] utilization at %.2f was %.2f%%, now is %.2f%%",
+                            CloudSim.clock(),
+                            host.getId(),
+                            getLastProcessTime(),
+                            previousUtilizationOfCpu * 100,
+                            utilizationOfCpu * 100);
+                    Log.formatLine(
+                            "%.2f: [Host #%d] energy is %.2f W*sec",
+                            CloudSim.clock(),
+                            host.getId(),
+                            timeFrameHostEnergy);
+                }
+                Log.formatLine(
+                        "\n%.2f: Data center's energy is %.2f W*sec\n",
+                        CloudSim.clock(),
+                        timeFrameDatacenterEnergy);
+		    }
             // gurantees a minimal interval before scheduling the event
             if (smallerTime < CloudSim.clock() + 0.11) {
                 smallerTime = CloudSim.clock() + 0.11;
