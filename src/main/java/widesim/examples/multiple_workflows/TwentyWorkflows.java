@@ -29,7 +29,7 @@ public class TwentyWorkflows {
         CloudSim.init(1, Calendar.getInstance(), false);
 
         // Parse topology
-        var topologyParser = new Parser(new File("src/main/resources/topologies/new_topology.json"));
+        var topologyParser = new Parser(new File("src/main/resources/topologies/a_edge_server.json"));
         var deviceAndVms = topologyParser.parse();
 
         var fogDevices = deviceAndVms.getFirst();
@@ -86,11 +86,6 @@ public class TwentyWorkflows {
             workflowList.addAll(workflow);
             startId+=wf.getSecond();
         }
-
-        // for (Workflow workflow: workflowList) {
-        //     var analyzer = widesim.parse.workflow.PostProcessor.buildWorkflowAnalyzer(workflow);
-        //     widesim.parse.workflow.PostProcessor.isWorkflowValid(analyzer);
-        // }
 
         var workflowEngine = new WorkflowEngine(fogBroker.getId());
         fogBroker.setWorkflowEngineId(workflowEngine.getId());

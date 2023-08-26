@@ -24,7 +24,7 @@ import widesim.parse.topology.Parser;
 import widesim.parse.topology.PostProcessor;
 import widesim.provision.SimpleVmProvisioner;
 
-public class FifteenWorkflows {
+public class FortyWorkflows {
     public static void main(String[] args) throws Exception {
         CloudSim.init(1, Calendar.getInstance(), false);
 
@@ -68,17 +68,48 @@ public class FifteenWorkflows {
             "Montage_100",
             "Sipht_60",
 
+            "CyberShake_1000",
+            "Epigenomics_997",
+            "Inspiral_1000",
+            "Montage_1000",
+            "Sipht_100",
+
+            "CyberShake_1000",
+            "Epigenomics_997",
+            "Inspiral_1000",
+            "Montage_1000",
+            "Sipht_100",
+
+            "CyberShake_1000",
+            "Epigenomics_997",
+            "Inspiral_1000",
+            "Montage_1000",
+            "Sipht_100",
+
+            "CyberShake_1000",
+            "Epigenomics_997",
+            "Inspiral_1000",
+            "Montage_1000",
+            "Sipht_100",
+
+            "CyberShake_1000",
+            "Epigenomics_997",
+            "Inspiral_1000",
+            "Montage_1000",
+            "Sipht_100",
         };
 
         int startId = 0;
+        int daxId = 0;
         List<Workflow> workflowList = new ArrayList<>();
 
         for (String name : strList) {
-            var daxParser = new DaxParser(String.format("src/main/resources/dax/%s.xml", name));
+            var daxParser = new DaxParser(String.format("src/main/resources/dax/%s.xml", name), daxId);
             Pair<Workflow, Integer> wf = daxParser.buildMultipleWorkflow(startId, 0);
             var workflow = List.of(wf.getFirst());
             workflowList.addAll(workflow);
             startId+=wf.getSecond();
+            daxId+=1;
         }
 
         var workflowEngine = new WorkflowEngine(fogBroker.getId());
@@ -100,5 +131,4 @@ public class FifteenWorkflows {
             Logger.printResult(cycle, tasks, fogBroker.getVmToFogDevice(), fogDevices);
         });
     }
-    
 }

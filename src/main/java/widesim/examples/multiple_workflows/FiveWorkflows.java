@@ -30,7 +30,7 @@ public class FiveWorkflows {
         CloudSim.init(1, Calendar.getInstance(), false);
 
         // Parse topology
-        var topologyParser = new Parser(new File("src/main/resources/topologies/new_topology.json"));
+        var topologyParser = new Parser(new File("src/main/resources/topologies/a_edge_server.json"));
         var deviceAndVms = topologyParser.parse();
 
         var fogDevices = deviceAndVms.getFirst();
@@ -55,7 +55,7 @@ public class FiveWorkflows {
             "Epigenomics_24",
             "Inspiral_30",
             "Montage_25",
-            "Sipht_30"
+            "Sipht_6"
         };
 
         int startId = 0;
@@ -67,11 +67,6 @@ public class FiveWorkflows {
             var workflow = List.of(wf.getFirst());
             workflowList.addAll(workflow);
             startId+=wf.getSecond();
-        }
-
-        for (Workflow workflow: workflowList) {
-            var analyzer = widesim.parse.workflow.PostProcessor.buildWorkflowAnalyzer(workflow);
-            widesim.parse.workflow.PostProcessor.isWorkflowValid(analyzer);
         }
 
         var workflowEngine = new WorkflowEngine(fogBroker.getId());
