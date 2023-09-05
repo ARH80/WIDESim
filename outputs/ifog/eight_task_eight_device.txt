@@ -1,0 +1,504 @@
+Initialising...
+Starting CloudSim version 3.0
+[0.00]|[FogDevice(2|t1)]: Starting FogDevice(2)...
+[0.00]|[FogDevice(3|t2)]: Starting FogDevice(3)...
+[0.00]|[FogDevice(4|t3)]: Starting FogDevice(4)...
+[0.00]|[FogDevice(5|t4)]: Starting FogDevice(5)...
+[0.00]|[FogDevice(6|t5)]: Starting FogDevice(6)...
+[0.00]|[FogDevice(7|t6)]: Starting FogDevice(7)...
+[0.00]|[FogDevice(8|t7)]: Starting FogDevice(8)...
+[0.00]|[FogDevice(9|t8)]: Starting FogDevice(9)...
+[0.00]|[FogBroker(10)]: Starting FogBroker...
+[0.00]|[WorkflowEngine(11)]: Starting WorkflowEngine...
+[0.00]|[TaskManager(12)]: Starting Task Manager...
+[0.00]|[TaskManager(12)]: Sending task: 1 of workflow: workflow_0
+[0.00]|[TaskManager(12)]: Sending task: 2 of workflow: workflow_0
+[0.00]|[TaskManager(12)]: Sending task: 3 of workflow: workflow_0
+[0.00]|[TaskManager(12)]: Sending task: 4 of workflow: workflow_0
+[0.00]|[TaskManager(12)]: Sending task: 5 of workflow: workflow_0
+[0.00]|[TaskManager(12)]: Sending task: 6 of workflow: workflow_0
+[0.00]|[TaskManager(12)]: Sending task: 7 of workflow: workflow_0
+[0.00]|[TaskManager(12)]: Sending task: 8 of workflow: workflow_0
+Entities started.
+[0.00]|[FogBroker(10)]: Requesting for fog devices characteristics...
+[0.00]|[WorkflowEngine(11)]: Task(1) of workflow(workflow_0) received
+[0.00]|[WorkflowEngine(11)]: Sending Task(1) from workflow(workflow_0)...
+[0.00]|[WorkflowEngine(11)]: Task(2) of workflow(workflow_0) received
+[0.00]|[WorkflowEngine(11)]: Task(2) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(11)]: Task(3) of workflow(workflow_0) received
+[0.00]|[WorkflowEngine(11)]: Task(3) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(11)]: Task(4) of workflow(workflow_0) received
+[0.00]|[WorkflowEngine(11)]: Task(4) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(11)]: Task(5) of workflow(workflow_0) received
+[0.00]|[WorkflowEngine(11)]: Task(5) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(11)]: Task(6) of workflow(workflow_0) received
+[0.00]|[WorkflowEngine(11)]: Task(6) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(11)]: Task(7) of workflow(workflow_0) received
+[0.00]|[WorkflowEngine(11)]: Task(7) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(11)]: Task(8) of workflow(workflow_0) received
+[0.00]|[WorkflowEngine(11)]: Task(8) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[FogBroker(10)]: Task(1) of Workflow(workflow_0) received
+[0.00]|[FogBroker(10)]: Dispatching tasks...
+[0.00]|[FogBroker(10)]: All resources received
+[0.00]|[FogBroker(10)]: All pending vm create acks received
+[0.00]|[FogBroker(10)]: Dispatching tasks...
+[0.00]|[FogBroker(10)]: Sending STAGE_IN data for Task(1) to FogDevice(2) with delay: 0.11
+[0.11]|[FogDevice(2|t1)]: Received Task(1) from Workflow(workflow_0) with STAGE_IN data to run on Vm(0)
+[0.11]|[FogDevice(2|t1)]: Received execute msg for Task(1) on Cycle(0) from Workflow(workflow_0) to run on Vm(0)
+[0.11]|[FogDevice(2|t1)]: All parent data for Task(1) are received. task can execute
+0.11: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+0.11: [Host #0] MIPS for VM #0 by PEs (1 * 1000.0). PE #0: 1000.00.
+0.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 0.00 to 0.11:
+
+0.11: [Host #0] utilization at 0.00 was 0.00%, now is 100.00%
+0.11: [Host #0] energy is 0.00 W*sec
+
+0.11: Data center's energy is 0.00 W*sec
+
+[0.11]|[FogBroker(10)]: Task(1) ack: true
+1.11: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+1.11: [Host #0] MIPS for VM #0 by PEs (1 * 1000.0). PE #0: 1000.00.
+1.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 0.11 to 1.11:
+
+1.11: [Host #0] utilization at 0.11 was 100.00%, now is 100.00%
+1.11: [Host #0] energy is 1000.00 W*sec
+
+1.11: Data center's energy is 1000.00 W*sec
+
+[1.11]|[FogBroker(10)]: Received task completion msg for Task(1) from FogDevice(2)
+[1.11]|[FogBroker(10)]: Notifying WorkflowEngine of completed Task(1)...
+[1.11]|[FogBroker(10)]: Task(1) on Cycle(0) decided to generate data: true
+[1.11]|[FogBroker(10)]: All dispatched tasks are complete
+[1.11]|[FogBroker(10)]: There is no vm to destroy
+[1.11]|[FogBroker(10)]: There is no vm to create
+[1.11]|[FogBroker(10)]: Trying to dispatch tasks...
+[1.11]|[FogBroker(10)]: Dispatching tasks...
+[1.11]|[WorkflowEngine(11)]: Task(1) received as complete
+[1.11]|[WorkflowEngine(11)]: Task(2) is now ready to get executed. Releasing it...
+[1.11]|[FogBroker(10)]: Task(2) of Workflow(workflow_0) received
+[1.11]|[FogBroker(10)]: Dispatching tasks...
+[1.11]|[FogBroker(10)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(1) on Cycle(0)
+[1.11]|[FogBroker(10)]: Asking FogDevice(3) to execute Task(2) on Cycle(0)
+[1.11]|[FogDevice(2|t1)]: Received STAGE_OUT data of Task(1) on Cycle(0) to FogDevice(3)
+[1.11]|[FogDevice(2|t1)]: Sending data of Task(1) on Cycle(0) to FogDevice(3) with Delay(9.765625E-7)
+[1.11]|[FogDevice(3|t2)]: Received execute msg for Task(2) on Cycle(0) from Workflow(workflow_0) to run on Vm(1)
+[1.11]|[FogDevice(3|t2)]: Not all parent data are available. task is added to waiting queue
+[1.11]|[FogDevice(3|t2)]: Downloading data from fog device: 2
+[1.11]|[FogDevice(3|t2)]: Downloaded data of Task(1) on Cycle(0)
+[1.11]|[FogDevice(3|t2)]: Data is for me
+[1.11]|[FogDevice(3|t2)]: Updating received data with: Cycle(0): Task(1) -> true
+[1.11]|[FogDevice(3|t2)]: Found Task(2) from Workflow(workflow_0) that can be executed
+[1.11]|[FogDevice(3|t2)]: Received execute msg for Task(2) on Cycle(0) from Workflow(workflow_0) to run on Vm(1)
+[1.11]|[FogDevice(3|t2)]: All parent data for Task(2) are received. task can execute
+1.11: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+1.11: [Host #0] MIPS for VM #1 by PEs (1 * 1000.0). PE #0: 1000.00.
+1.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 0.00 to 1.11:
+
+1.11: [Host #0] utilization at 0.00 was 0.00%, now is 100.00%
+1.11: [Host #0] energy is 0.00 W*sec
+
+1.11: Data center's energy is 0.00 W*sec
+
+[1.11]|[FogBroker(10)]: Task(2) ack: true
+3.11: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+3.11: [Host #0] MIPS for VM #1 by PEs (1 * 1000.0). PE #0: 1000.00.
+3.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 1.11 to 3.11:
+
+3.11: [Host #0] utilization at 1.11 was 100.00%, now is 100.00%
+3.11: [Host #0] energy is 2000.00 W*sec
+
+3.11: Data center's energy is 2000.00 W*sec
+
+[3.11]|[FogBroker(10)]: Received task completion msg for Task(2) from FogDevice(3)
+[3.11]|[FogBroker(10)]: Notifying WorkflowEngine of completed Task(2)...
+[3.11]|[FogBroker(10)]: Task(2) on Cycle(0) decided to generate data: true
+[3.11]|[FogBroker(10)]: All dispatched tasks are complete
+[3.11]|[FogBroker(10)]: There is no vm to destroy
+[3.11]|[FogBroker(10)]: There is no vm to create
+[3.11]|[FogBroker(10)]: Trying to dispatch tasks...
+[3.11]|[FogBroker(10)]: Dispatching tasks...
+[3.11]|[WorkflowEngine(11)]: Task(2) received as complete
+[3.11]|[WorkflowEngine(11)]: Task(3) is now ready to get executed. Releasing it...
+[3.11]|[WorkflowEngine(11)]: Task(4) is now ready to get executed. Releasing it...
+[3.11]|[WorkflowEngine(11)]: Task(5) is now ready to get executed. Releasing it...
+[3.11]|[WorkflowEngine(11)]: Task(6) is now ready to get executed. Releasing it...
+[3.11]|[WorkflowEngine(11)]: Task(7) is now ready to get executed. Releasing it...
+[3.11]|[WorkflowEngine(11)]: Task(8) is now ready to get executed. Releasing it...
+[3.11]|[FogBroker(10)]: Task(3) of Workflow(workflow_0) received
+[3.11]|[FogBroker(10)]: Dispatching tasks...
+[3.11]|[FogBroker(10)]: Sending STAGE_OUT_MSG to FogDevice(3) for Task(2) on Cycle(0)
+[3.11]|[FogBroker(10)]: Asking FogDevice(4) to execute Task(3) on Cycle(0)
+[3.11]|[FogBroker(10)]: Task(4) of Workflow(workflow_0) received
+[3.11]|[FogBroker(10)]: Dispatching tasks...
+[3.11]|[FogBroker(10)]: Sending STAGE_OUT_MSG to FogDevice(3) for Task(2) on Cycle(0)
+[3.11]|[FogBroker(10)]: Asking FogDevice(5) to execute Task(4) on Cycle(0)
+[3.11]|[FogBroker(10)]: Task(5) of Workflow(workflow_0) received
+[3.11]|[FogBroker(10)]: Dispatching tasks...
+[3.11]|[FogBroker(10)]: Sending STAGE_OUT_MSG to FogDevice(3) for Task(2) on Cycle(0)
+[3.11]|[FogBroker(10)]: Asking FogDevice(6) to execute Task(5) on Cycle(0)
+[3.11]|[FogBroker(10)]: Task(6) of Workflow(workflow_0) received
+[3.11]|[FogBroker(10)]: Dispatching tasks...
+[3.11]|[FogBroker(10)]: Sending STAGE_OUT_MSG to FogDevice(3) for Task(2) on Cycle(0)
+[3.11]|[FogBroker(10)]: Asking FogDevice(7) to execute Task(6) on Cycle(0)
+[3.11]|[FogBroker(10)]: Task(7) of Workflow(workflow_0) received
+[3.11]|[FogBroker(10)]: Dispatching tasks...
+[3.11]|[FogBroker(10)]: Sending STAGE_OUT_MSG to FogDevice(3) for Task(2) on Cycle(0)
+[3.11]|[FogBroker(10)]: Asking FogDevice(8) to execute Task(7) on Cycle(0)
+[3.11]|[FogBroker(10)]: Task(8) of Workflow(workflow_0) received
+[3.11]|[FogBroker(10)]: Dispatching tasks...
+[3.11]|[FogBroker(10)]: Sending STAGE_OUT_MSG to FogDevice(3) for Task(2) on Cycle(0)
+[3.11]|[FogBroker(10)]: Asking FogDevice(9) to execute Task(8) on Cycle(0)
+[3.11]|[FogDevice(3|t2)]: Received STAGE_OUT data of Task(2) on Cycle(0) to FogDevice(4)
+[3.11]|[FogDevice(3|t2)]: Sending data of Task(2) on Cycle(0) to FogDevice(4) with Delay(9.765625E-7)
+[3.11]|[FogDevice(3|t2)]: Received STAGE_OUT data of Task(2) on Cycle(0) to FogDevice(5)
+[3.11]|[FogDevice(3|t2)]: Sending data of Task(2) on Cycle(0) to FogDevice(4) with Delay(9.765625E-7)
+[3.11]|[FogDevice(3|t2)]: Received STAGE_OUT data of Task(2) on Cycle(0) to FogDevice(6)
+[3.11]|[FogDevice(3|t2)]: Sending data of Task(2) on Cycle(0) to FogDevice(4) with Delay(9.765625E-7)
+[3.11]|[FogDevice(3|t2)]: Received STAGE_OUT data of Task(2) on Cycle(0) to FogDevice(7)
+[3.11]|[FogDevice(3|t2)]: Sending data of Task(2) on Cycle(0) to FogDevice(4) with Delay(9.765625E-7)
+[3.11]|[FogDevice(3|t2)]: Received STAGE_OUT data of Task(2) on Cycle(0) to FogDevice(8)
+[3.11]|[FogDevice(3|t2)]: Sending data of Task(2) on Cycle(0) to FogDevice(4) with Delay(9.765625E-7)
+[3.11]|[FogDevice(3|t2)]: Received STAGE_OUT data of Task(2) on Cycle(0) to FogDevice(9)
+[3.11]|[FogDevice(3|t2)]: Sending data of Task(2) on Cycle(0) to FogDevice(4) with Delay(9.765625E-7)
+[3.11]|[FogDevice(4|t3)]: Received execute msg for Task(3) on Cycle(0) from Workflow(workflow_0) to run on Vm(2)
+[3.11]|[FogDevice(4|t3)]: Not all parent data are available. task is added to waiting queue
+[3.11]|[FogDevice(5|t4)]: Received execute msg for Task(4) on Cycle(0) from Workflow(workflow_0) to run on Vm(3)
+[3.11]|[FogDevice(5|t4)]: Not all parent data are available. task is added to waiting queue
+[3.11]|[FogDevice(6|t5)]: Received execute msg for Task(5) on Cycle(0) from Workflow(workflow_0) to run on Vm(4)
+[3.11]|[FogDevice(6|t5)]: Not all parent data are available. task is added to waiting queue
+[3.11]|[FogDevice(7|t6)]: Received execute msg for Task(6) on Cycle(0) from Workflow(workflow_0) to run on Vm(5)
+[3.11]|[FogDevice(7|t6)]: Not all parent data are available. task is added to waiting queue
+[3.11]|[FogDevice(8|t7)]: Received execute msg for Task(7) on Cycle(0) from Workflow(workflow_0) to run on Vm(6)
+[3.11]|[FogDevice(8|t7)]: Not all parent data are available. task is added to waiting queue
+[3.11]|[FogDevice(9|t8)]: Received execute msg for Task(8) on Cycle(0) from Workflow(workflow_0) to run on Vm(7)
+[3.11]|[FogDevice(9|t8)]: Not all parent data are available. task is added to waiting queue
+[3.11]|[FogDevice(4|t3)]: Downloading data from fog device: 3
+[3.11]|[FogDevice(4|t3)]: Downloading data from fog device: 3
+[3.11]|[FogDevice(4|t3)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(4|t3)]: Data is for me
+[3.11]|[FogDevice(4|t3)]: Updating received data with: Cycle(0): Task(2) -> true
+[3.11]|[FogDevice(4|t3)]: Found Task(3) from Workflow(workflow_0) that can be executed
+[3.11]|[FogDevice(4|t3)]: Received execute msg for Task(3) on Cycle(0) from Workflow(workflow_0) to run on Vm(2)
+[3.11]|[FogDevice(4|t3)]: All parent data for Task(3) are received. task can execute
+3.11: [Host #0] Total allocated MIPS for VM #2 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+3.11: [Host #0] MIPS for VM #2 by PEs (1 * 1000.0). PE #0: 1000.00.
+3.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 0.00 to 3.11:
+
+3.11: [Host #0] utilization at 0.00 was 0.00%, now is 100.00%
+3.11: [Host #0] energy is 0.00 W*sec
+
+3.11: Data center's energy is 0.00 W*sec
+
+[3.11]|[FogBroker(10)]: Task(3) ack: true
+[3.11]|[FogDevice(4|t3)]: Downloading data from fog device: 3
+[3.11]|[FogDevice(4|t3)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(4|t3)]: Data is not for me. relaying the message
+[3.11]|[FogDevice(4|t3)]: Downloading data from fog device: 3
+[3.11]|[FogDevice(4|t3)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(4|t3)]: Data is not for me. relaying the message
+[3.11]|[FogDevice(5|t4)]: Downloading data from fog device: 4
+[3.11]|[FogDevice(4|t3)]: Downloading data from fog device: 3
+[3.11]|[FogDevice(4|t3)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(4|t3)]: Data is not for me. relaying the message
+[3.11]|[FogDevice(5|t4)]: Downloading data from fog device: 4
+[3.11]|[FogDevice(5|t4)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(5|t4)]: Data is for me
+[3.11]|[FogDevice(5|t4)]: Updating received data with: Cycle(0): Task(2) -> true
+[3.11]|[FogDevice(5|t4)]: Found Task(4) from Workflow(workflow_0) that can be executed
+[3.11]|[FogDevice(5|t4)]: Received execute msg for Task(4) on Cycle(0) from Workflow(workflow_0) to run on Vm(3)
+[3.11]|[FogDevice(5|t4)]: All parent data for Task(4) are received. task can execute
+3.11: [Host #0] Total allocated MIPS for VM #3 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+3.11: [Host #0] MIPS for VM #3 by PEs (1 * 1000.0). PE #0: 1000.00.
+3.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 0.00 to 3.11:
+
+3.11: [Host #0] utilization at 0.00 was 0.00%, now is 100.00%
+3.11: [Host #0] energy is 0.00 W*sec
+
+3.11: Data center's energy is 0.00 W*sec
+
+[3.11]|[FogBroker(10)]: Task(4) ack: true
+[3.11]|[FogDevice(4|t3)]: Downloading data from fog device: 3
+[3.11]|[FogDevice(4|t3)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(4|t3)]: Data is not for me. relaying the message
+[3.11]|[FogDevice(5|t4)]: Downloading data from fog device: 4
+[3.11]|[FogDevice(5|t4)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(5|t4)]: Data is not for me. relaying the message
+[3.11]|[FogDevice(4|t3)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(4|t3)]: Data is not for me. relaying the message
+[3.11]|[FogDevice(5|t4)]: Downloading data from fog device: 4
+[3.11]|[FogDevice(5|t4)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(5|t4)]: Data is not for me. relaying the message
+[3.11]|[FogDevice(6|t5)]: Downloading data from fog device: 5
+[3.11]|[FogDevice(5|t4)]: Downloading data from fog device: 4
+[3.11]|[FogDevice(5|t4)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(5|t4)]: Data is not for me. relaying the message
+[3.11]|[FogDevice(6|t5)]: Downloading data from fog device: 5
+[3.11]|[FogDevice(6|t5)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(6|t5)]: Data is for me
+[3.11]|[FogDevice(6|t5)]: Updating received data with: Cycle(0): Task(2) -> true
+[3.11]|[FogDevice(6|t5)]: Found Task(5) from Workflow(workflow_0) that can be executed
+[3.11]|[FogDevice(6|t5)]: Received execute msg for Task(5) on Cycle(0) from Workflow(workflow_0) to run on Vm(4)
+[3.11]|[FogDevice(6|t5)]: All parent data for Task(5) are received. task can execute
+3.11: [Host #0] Total allocated MIPS for VM #4 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+3.11: [Host #0] MIPS for VM #4 by PEs (1 * 1000.0). PE #0: 1000.00.
+3.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 0.00 to 3.11:
+
+3.11: [Host #0] utilization at 0.00 was 0.00%, now is 100.00%
+3.11: [Host #0] energy is 0.00 W*sec
+
+3.11: Data center's energy is 0.00 W*sec
+
+[3.11]|[FogBroker(10)]: Task(5) ack: true
+[3.11]|[FogDevice(5|t4)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(5|t4)]: Data is not for me. relaying the message
+[3.11]|[FogDevice(6|t5)]: Downloading data from fog device: 5
+[3.11]|[FogDevice(6|t5)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(6|t5)]: Data is not for me. relaying the message
+[3.11]|[FogDevice(6|t5)]: Downloading data from fog device: 5
+[3.11]|[FogDevice(6|t5)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(6|t5)]: Data is not for me. relaying the message
+[3.11]|[FogDevice(7|t6)]: Downloading data from fog device: 6
+[3.11]|[FogDevice(6|t5)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(6|t5)]: Data is not for me. relaying the message
+[3.11]|[FogDevice(7|t6)]: Downloading data from fog device: 6
+[3.11]|[FogDevice(7|t6)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(7|t6)]: Data is for me
+[3.11]|[FogDevice(7|t6)]: Updating received data with: Cycle(0): Task(2) -> true
+[3.11]|[FogDevice(7|t6)]: Found Task(6) from Workflow(workflow_0) that can be executed
+[3.11]|[FogDevice(7|t6)]: Received execute msg for Task(6) on Cycle(0) from Workflow(workflow_0) to run on Vm(5)
+[3.11]|[FogDevice(7|t6)]: All parent data for Task(6) are received. task can execute
+3.11: [Host #0] Total allocated MIPS for VM #5 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+3.11: [Host #0] MIPS for VM #5 by PEs (1 * 1000.0). PE #0: 1000.00.
+3.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 0.00 to 3.11:
+
+3.11: [Host #0] utilization at 0.00 was 0.00%, now is 100.00%
+3.11: [Host #0] energy is 0.00 W*sec
+
+3.11: Data center's energy is 0.00 W*sec
+
+[3.11]|[FogBroker(10)]: Task(6) ack: true
+[3.11]|[FogDevice(7|t6)]: Downloading data from fog device: 6
+[3.11]|[FogDevice(7|t6)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(7|t6)]: Data is not for me. relaying the message
+[3.11]|[FogDevice(7|t6)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(7|t6)]: Data is not for me. relaying the message
+[3.11]|[FogDevice(8|t7)]: Downloading data from fog device: 7
+[3.11]|[FogDevice(8|t7)]: Downloading data from fog device: 7
+[3.11]|[FogDevice(8|t7)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(8|t7)]: Data is for me
+[3.11]|[FogDevice(8|t7)]: Updating received data with: Cycle(0): Task(2) -> true
+[3.11]|[FogDevice(8|t7)]: Found Task(7) from Workflow(workflow_0) that can be executed
+[3.11]|[FogDevice(8|t7)]: Received execute msg for Task(7) on Cycle(0) from Workflow(workflow_0) to run on Vm(6)
+[3.11]|[FogDevice(8|t7)]: All parent data for Task(7) are received. task can execute
+3.11: [Host #0] Total allocated MIPS for VM #6 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+3.11: [Host #0] MIPS for VM #6 by PEs (1 * 1000.0). PE #0: 1000.00.
+3.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 0.00 to 3.11:
+
+3.11: [Host #0] utilization at 0.00 was 0.00%, now is 100.00%
+3.11: [Host #0] energy is 0.00 W*sec
+
+3.11: Data center's energy is 0.00 W*sec
+
+[3.11]|[FogBroker(10)]: Task(7) ack: true
+[3.11]|[FogDevice(8|t7)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(8|t7)]: Data is not for me. relaying the message
+[3.11]|[FogDevice(9|t8)]: Downloading data from fog device: 8
+[3.11]|[FogDevice(9|t8)]: Downloaded data of Task(2) on Cycle(0)
+[3.11]|[FogDevice(9|t8)]: Data is for me
+[3.11]|[FogDevice(9|t8)]: Updating received data with: Cycle(0): Task(2) -> true
+[3.11]|[FogDevice(9|t8)]: Found Task(8) from Workflow(workflow_0) that can be executed
+[3.11]|[FogDevice(9|t8)]: Received execute msg for Task(8) on Cycle(0) from Workflow(workflow_0) to run on Vm(7)
+[3.11]|[FogDevice(9|t8)]: All parent data for Task(8) are received. task can execute
+3.11: [Host #0] Total allocated MIPS for VM #7 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+3.11: [Host #0] MIPS for VM #7 by PEs (1 * 1000.0). PE #0: 1000.00.
+3.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 0.00 to 3.11:
+
+3.11: [Host #0] utilization at 0.00 was 0.00%, now is 100.00%
+3.11: [Host #0] energy is 0.00 W*sec
+
+3.11: Data center's energy is 0.00 W*sec
+
+[3.11]|[FogBroker(10)]: Task(8) ack: true
+6.11: [Host #0] Total allocated MIPS for VM #2 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+6.11: [Host #0] MIPS for VM #2 by PEs (1 * 1000.0). PE #0: 1000.00.
+6.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 3.11 to 6.11:
+
+6.11: [Host #0] utilization at 3.11 was 100.00%, now is 100.00%
+6.11: [Host #0] energy is 3000.00 W*sec
+
+6.11: Data center's energy is 3000.00 W*sec
+
+[6.11]|[FogBroker(10)]: Received task completion msg for Task(3) from FogDevice(4)
+[6.11]|[FogBroker(10)]: Notifying WorkflowEngine of completed Task(3)...
+[6.11]|[FogBroker(10)]: Task(3) on Cycle(0) decided to generate data: true
+[6.11]|[FogBroker(10)]: All dispatched tasks are complete
+[6.11]|[FogBroker(10)]: There is no vm to destroy
+[6.11]|[FogBroker(10)]: There is no vm to create
+[6.11]|[FogBroker(10)]: Trying to dispatch tasks...
+[6.11]|[FogBroker(10)]: Dispatching tasks...
+[6.11]|[WorkflowEngine(11)]: Task(3) received as complete
+7.11: [Host #0] Total allocated MIPS for VM #3 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+7.11: [Host #0] MIPS for VM #3 by PEs (1 * 1000.0). PE #0: 1000.00.
+7.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 3.11 to 7.11:
+
+7.11: [Host #0] utilization at 3.11 was 100.00%, now is 100.00%
+7.11: [Host #0] energy is 4000.00 W*sec
+
+7.11: Data center's energy is 4000.00 W*sec
+
+[7.11]|[FogBroker(10)]: Received task completion msg for Task(4) from FogDevice(5)
+[7.11]|[FogBroker(10)]: Notifying WorkflowEngine of completed Task(4)...
+[7.11]|[FogBroker(10)]: Task(4) on Cycle(0) decided to generate data: true
+[7.11]|[FogBroker(10)]: All dispatched tasks are complete
+[7.11]|[FogBroker(10)]: There is no vm to destroy
+[7.11]|[FogBroker(10)]: There is no vm to create
+[7.11]|[FogBroker(10)]: Trying to dispatch tasks...
+[7.11]|[FogBroker(10)]: Dispatching tasks...
+[7.11]|[WorkflowEngine(11)]: Task(4) received as complete
+8.11: [Host #0] Total allocated MIPS for VM #4 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+8.11: [Host #0] MIPS for VM #4 by PEs (1 * 1000.0). PE #0: 1000.00.
+8.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 3.11 to 8.11:
+
+8.11: [Host #0] utilization at 3.11 was 100.00%, now is 100.00%
+8.11: [Host #0] energy is 5000.00 W*sec
+
+8.11: Data center's energy is 5000.00 W*sec
+
+[8.11]|[FogBroker(10)]: Received task completion msg for Task(5) from FogDevice(6)
+[8.11]|[FogBroker(10)]: Notifying WorkflowEngine of completed Task(5)...
+[8.11]|[FogBroker(10)]: Task(5) on Cycle(0) decided to generate data: true
+[8.11]|[FogBroker(10)]: All dispatched tasks are complete
+[8.11]|[FogBroker(10)]: There is no vm to destroy
+[8.11]|[FogBroker(10)]: There is no vm to create
+[8.11]|[FogBroker(10)]: Trying to dispatch tasks...
+[8.11]|[FogBroker(10)]: Dispatching tasks...
+[8.11]|[WorkflowEngine(11)]: Task(5) received as complete
+9.11: [Host #0] Total allocated MIPS for VM #5 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+9.11: [Host #0] MIPS for VM #5 by PEs (1 * 1000.0). PE #0: 1000.00.
+9.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 3.11 to 9.11:
+
+9.11: [Host #0] utilization at 3.11 was 100.00%, now is 100.00%
+9.11: [Host #0] energy is 6000.00 W*sec
+
+9.11: Data center's energy is 6000.00 W*sec
+
+[9.11]|[FogBroker(10)]: Received task completion msg for Task(6) from FogDevice(7)
+[9.11]|[FogBroker(10)]: Notifying WorkflowEngine of completed Task(6)...
+[9.11]|[FogBroker(10)]: Task(6) on Cycle(0) decided to generate data: true
+[9.11]|[FogBroker(10)]: All dispatched tasks are complete
+[9.11]|[FogBroker(10)]: There is no vm to destroy
+[9.11]|[FogBroker(10)]: There is no vm to create
+[9.11]|[FogBroker(10)]: Trying to dispatch tasks...
+[9.11]|[FogBroker(10)]: Dispatching tasks...
+[9.11]|[WorkflowEngine(11)]: Task(6) received as complete
+10.11: [Host #0] Total allocated MIPS for VM #6 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+10.11: [Host #0] MIPS for VM #6 by PEs (1 * 1000.0). PE #0: 1000.00.
+10.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 3.11 to 10.11:
+
+10.11: [Host #0] utilization at 3.11 was 100.00%, now is 100.00%
+10.11: [Host #0] energy is 7000.00 W*sec
+
+10.11: Data center's energy is 7000.00 W*sec
+
+[10.11]|[FogBroker(10)]: Received task completion msg for Task(7) from FogDevice(8)
+[10.11]|[FogBroker(10)]: Notifying WorkflowEngine of completed Task(7)...
+[10.11]|[FogBroker(10)]: Task(7) on Cycle(0) decided to generate data: true
+[10.11]|[FogBroker(10)]: All dispatched tasks are complete
+[10.11]|[FogBroker(10)]: There is no vm to destroy
+[10.11]|[FogBroker(10)]: There is no vm to create
+[10.11]|[FogBroker(10)]: Trying to dispatch tasks...
+[10.11]|[FogBroker(10)]: Dispatching tasks...
+[10.11]|[WorkflowEngine(11)]: Task(7) received as complete
+11.11: [Host #0] Total allocated MIPS for VM #7 (Host #0) is 1000.00, was requested 0.00 out of total 1000.00 (0.00%)
+11.11: [Host #0] MIPS for VM #7 by PEs (1 * 1000.0). PE #0: 1000.00.
+11.11: [Host #0] utilization is 100.00%
+
+Energy consumption for the last time frame from 3.11 to 11.11:
+
+11.11: [Host #0] utilization at 3.11 was 100.00%, now is 100.00%
+11.11: [Host #0] energy is 8000.00 W*sec
+
+11.11: Data center's energy is 8000.00 W*sec
+
+[11.11]|[FogBroker(10)]: Received task completion msg for Task(8) from FogDevice(9)
+[11.11]|[FogBroker(10)]: Notifying WorkflowEngine of completed Task(8)...
+[11.11]|[FogBroker(10)]: Task(8) on Cycle(0) decided to generate data: true
+[11.11]|[FogBroker(10)]: All dispatched tasks are complete
+[11.11]|[FogBroker(10)]: There is no vm to destroy
+[11.11]|[FogBroker(10)]: There is no vm to create
+[11.11]|[FogBroker(10)]: Trying to dispatch tasks...
+[11.11]|[FogBroker(10)]: Dispatching tasks...
+[11.11]|[WorkflowEngine(11)]: Task(8) received as complete
+Simulation: No more future events
+CloudInformationService: Notify all CloudSim entities for shutting down.
+t1 is shutting down...
+t2 is shutting down...
+t3 is shutting down...
+t4 is shutting down...
+t5 is shutting down...
+t6 is shutting down...
+t7 is shutting down...
+t8 is shutting down...
+[11.11]|[WorkflowEngine(11)]: Shutting down entity...
+Simulation completed.
+Simulation completed.
+500.0
+500.0
+500.0
+500.0
+500.0
+500.0
+500.0
+500.0
+Cycle: 0
+╔═════════╤═══════╤══════════════════════╤════════════════════╤══════════╗
+║ Task ID │ On Vm │ Start Execution Time │ End Execution Time │ Duration ║
+╠═════════╪═══════╪══════════════════════╪════════════════════╪══════════╣
+║ 1       │ 0     │ 0.11                 │ 1.11               │ 1.00     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 2       │ 1     │ 1.11                 │ 3.11               │ 2.00     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 3       │ 2     │ 3.11                 │ 6.11               │ 3.00     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 4       │ 3     │ 3.11                 │ 7.11               │ 4.00     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 5       │ 4     │ 3.11                 │ 8.11               │ 5.00     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 6       │ 5     │ 3.11                 │ 9.11               │ 6.00     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 7       │ 6     │ 3.11                 │ 10.11              │ 7.00     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 8       │ 7     │ 3.11                 │ 11.11              │ 8.00     ║
+╚═════════╧═══════╧══════════════════════╧════════════════════╧══════════╝
+
+End Execution Time: 11.110018554687503
