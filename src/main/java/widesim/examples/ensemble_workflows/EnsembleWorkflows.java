@@ -80,15 +80,17 @@ public class EnsembleWorkflows {
         System.out.println("List of Workflows:");
         System.out.println(strList);
 
+        int daxId = 0;
         int startId = 0;
         List<Workflow> workflowList = new ArrayList<>();
 
         for (String name : strList) {
-            var daxParser = new DaxParser(String.format("src/main/resources/dax/%s.xml", name));
+            var daxParser = new DaxParser(String.format("src/main/resources/dax/%s.xml", name), daxId);
             Pair<Workflow, Integer> wf = daxParser.buildMultipleWorkflow(startId, 0);
             var workflow = List.of(wf.getFirst());
             workflowList.addAll(workflow);
             startId+=wf.getSecond();
+            daxId+=1;
         }
 
         var workflowEngine = new WorkflowEngine(fogBroker.getId());
@@ -110,6 +112,7 @@ public class EnsembleWorkflows {
         
         IntStream.range(0, fogBroker.getMaximumCycle() + 1).forEach(cycle -> {
             System.out.println("Cycle: " + cycle);
+            Logger.printResultWorkflow(cycle, taskManager.workflows, fogBroker.getVmList());
             Logger.printResult(cycle, tasks, fogBroker.getVmToFogDevice(), fogDevices);
         });
         System.out.println("Sum of utilizations: " + utilSize);

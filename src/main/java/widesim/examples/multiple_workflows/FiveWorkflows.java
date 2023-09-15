@@ -51,22 +51,25 @@ public class FiveWorkflows {
         fogBroker.submitVmList(vms);
 
         String[] strList = {
+
             "CyberShake_30",
             "Epigenomics_24",
             "Inspiral_30",
             "Montage_25",
-            "Sipht_6"
+            "Sipht_30"
+            
         };
-
+        int wfId = 0;
         int startId = 0;
         List<Workflow> workflowList = new ArrayList<>();
 
         for (String name : strList) {
-            var daxParser = new DaxParser(String.format("src/main/resources/dax/%s.xml", name));
+            var daxParser = new DaxParser(String.format("src/main/resources/dax/%s.xml", name), wfId);
             Pair<Workflow, Integer> wf = daxParser.buildMultipleWorkflow(startId, 0);
             var workflow = List.of(wf.getFirst());
             workflowList.addAll(workflow);
             startId+=wf.getSecond();
+            wfId+=1;
         }
 
         var workflowEngine = new WorkflowEngine(fogBroker.getId());
@@ -85,6 +88,7 @@ public class FiveWorkflows {
         }
         IntStream.range(0, fogBroker.getMaximumCycle() + 1).forEach(cycle -> {
             System.out.println("Cycle: " + cycle);
+            Logger.printResultWorkflow(cycle, taskManager.workflows, fogBroker.getVmList());
             Logger.printResult(cycle, tasks, fogBroker.getVmToFogDevice(), fogDevices);
         });
     }

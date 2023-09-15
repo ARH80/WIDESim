@@ -29,7 +29,7 @@ public class ThirtyFiveWorkflows {
         CloudSim.init(1, Calendar.getInstance(), false);
 
         // Parse topology
-        var topologyParser = new Parser(new File("src/main/resources/topologies/a_edge_server.json"));
+        var topologyParser = new Parser(new File("src/main/resources/topologies/c_device_cloud.json"));
         var deviceAndVms = topologyParser.parse();
 
         var fogDevices = deviceAndVms.getFirst();
@@ -54,43 +54,43 @@ public class ThirtyFiveWorkflows {
             "Epigenomics_24",
             "Inspiral_30",
             "Montage_25",
-            "Sipht_6",
+            "Sipht_30",
 
             "CyberShake_50",
             "Epigenomics_46",
             "Inspiral_50",
             "Montage_50",
-            "Sipht_30",
+            "Sipht_60",
 
             "CyberShake_100",
             "Epigenomics_100",
             "Inspiral_100",
             "Montage_100",
-            "Sipht_60",
-
-            "CyberShake_1000",
-            "Epigenomics_997",
-            "Inspiral_1000",
-            "Montage_1000",
             "Sipht_100",
 
             "CyberShake_1000",
             "Epigenomics_997",
             "Inspiral_1000",
             "Montage_1000",
-            "Sipht_100",
+            "Sipht_1000",
 
             "CyberShake_1000",
             "Epigenomics_997",
             "Inspiral_1000",
             "Montage_1000",
-            "Sipht_100",
+            "Sipht_1000",
 
             "CyberShake_1000",
             "Epigenomics_997",
             "Inspiral_1000",
             "Montage_1000",
-            "Sipht_100"
+            "Sipht_1000",
+
+            "CyberShake_1000",
+            "Epigenomics_997",
+            "Inspiral_1000",
+            "Montage_1000",
+            "Sipht_1000"
         };
 
         int startId = 0;
@@ -122,6 +122,7 @@ public class ThirtyFiveWorkflows {
         }
         IntStream.range(0, fogBroker.getMaximumCycle() + 1).forEach(cycle -> {
             System.out.println("Cycle: " + cycle);
+            Logger.printResultWorkflow(cycle, taskManager.workflows, fogBroker.getVmList());
             Logger.printResult(cycle, tasks, fogBroker.getVmToFogDevice(), fogDevices);
         });
     }

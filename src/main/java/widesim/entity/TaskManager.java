@@ -17,11 +17,13 @@ public class TaskManager extends SimEntity {
 
     private final List<Task> tasks = new ArrayList<>();
     private final Integer workflowEngineId;
+    public List<Workflow> workflows;
 
     public TaskManager(Integer workflowEngineId, List<Workflow> workflows) {
         super("TaskManager");
 
         this.workflowEngineId = workflowEngineId;
+        this.workflows = workflows;
 
         for (Workflow workflow : workflows)
             tasks.addAll(workflow.getTasks());

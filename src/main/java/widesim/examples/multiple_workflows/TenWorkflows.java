@@ -29,7 +29,7 @@ public class TenWorkflows {
         CloudSim.init(1, Calendar.getInstance(), false);
 
         // Parse topology
-        var topologyParser = new Parser(new File("src/main/resources/topologies/a_edge_server.json"));
+        var topologyParser = new Parser(new File("src/main/resources/topologies/c_device_cloud.json"));
         var deviceAndVms = topologyParser.parse();
 
         var fogDevices = deviceAndVms.getFirst();
@@ -50,28 +50,31 @@ public class TenWorkflows {
         fogBroker.submitVmList(vms);
 
         String[] strList = {
+
             "CyberShake_30",
             "Epigenomics_24",
             "Inspiral_30",
             "Montage_25",
-            "Sipht_6",
+            "Sipht_30",
 
             "CyberShake_50",
             "Epigenomics_46",
             "Inspiral_50",
             "Montage_50",
-            "Sipht_30",
-        };
+            "Sipht_60"
 
+        };
+        int wfId = 0;
         int startId = 0;
         List<Workflow> workflowList = new ArrayList<>();
 
         for (String name : strList) {
-            var daxParser = new DaxParser(String.format("src/main/resources/dax/%s.xml", name));
+            var daxParser = new DaxParser(String.format("src/main/resources/dax/%s.xml", name), wfId);
             Pair<Workflow, Integer> wf = daxParser.buildMultipleWorkflow(startId, 0);
             var workflow = List.of(wf.getFirst());
             workflowList.addAll(workflow);
             startId+=wf.getSecond();
+            wfId+=1;
         }
 
         var workflowEngine = new WorkflowEngine(fogBroker.getId());
@@ -90,6 +93,7 @@ public class TenWorkflows {
         }
         IntStream.range(0, fogBroker.getMaximumCycle() + 1).forEach(cycle -> {
             System.out.println("Cycle: " + cycle);
+            Logger.printResultWorkflow(cycle, taskManager.workflows, fogBroker.getVmList());
             Logger.printResult(cycle, tasks, fogBroker.getVmToFogDevice(), fogDevices);
         });
     }
