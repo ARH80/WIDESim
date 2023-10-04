@@ -61,13 +61,25 @@
   ],
   "vms": [
     {
-      "vm_id": 1
+      "vm_id": 0,
+      "fog_device_id": "t1",
+      "ram": 2048,
+      "bw": 2048,
+      "mips": 2000
     },
     {
-      "vm_id": 2
+      "vm_id": 1,
+      "fog_device_id": "t2",
+      "ram": 2048,
+      "bw": 2048,
+      "mips": 2000
     },
     {
-      "vm_id": 4
+      "vm_id": 2,
+      "fog_device_id": "t4",
+      "ram": 2048,
+      "bw": 2048,
+      "mips": 2000
     }
   ]
 }

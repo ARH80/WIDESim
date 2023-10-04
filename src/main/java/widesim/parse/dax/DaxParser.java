@@ -26,6 +26,15 @@ public class DaxParser {
         this.workflowName = file.getName();
     }
 
+    public DaxParser(String filePath, int idx) throws ParserConfigurationException, IOException, SAXException {
+        java.io.File file = new java.io.File(filePath);
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        DocumentBuilder db = dbf.newDocumentBuilder();
+
+        this.workflowDax = db.parse(file);
+        this.workflowName = file.getName() + "_" + Integer.toString(idx);
+    }
+
     public Workflow buildWorkflow() {
         NodeList jobNodes = workflowDax.getElementsByTagName("job");
 
@@ -138,5 +147,115 @@ public class DaxParser {
         }
 
         return new Workflow(tasks, workflowName);
+    }
+
+    public Pair<Workflow, Integer> buildMultipleWorkflow(int startId, int startFile) {
+        NodeList jobNodes = workflowDax.getElementsByTagName("job");
+
+        Map<String, List<Integer>> fileToOwner = new HashMap<>();
+
+        List<Job> jobs = new ArrayList<>();
+
+        for (int i = 0; i < jobNodes.getLength(); i++) {
+            Node jobNode = jobNodes.item(i);
+            NamedNodeMap attributes = jobNode.getAttributes();
+            int id = Integer.parseInt(attributes.getNamedItem("id").getNodeValue().substring(2)) + 1 + startId;
+            long runtime = (long)(1000 * Double.parseDouble(attributes.getNamedItem("runtime").getNodeValue()));
+
+            if (runtime < 100)
+                runtime = 100;
+
+            NodeList files = ((Element) jobNode).getElementsByTagName("uses");
+            List<File> inputFiles = new ArrayList<>();
+            List<File> outputFiles = new ArrayList<>();
+            Map<String, Long> fileMap = new HashMap<>();
+
+            for (int j = 0; j < files.getLength(); j++) {
+                Node file = files.item(j);
+                NamedNodeMap fileAttributes = file.getAttributes();
+                String fileId = fileAttributes.getNamedItem("file").getNodeValue();
+                String type = fileAttributes.getNamedItem("link").getNodeValue();
+                long size = Long.parseLong(fileAttributes.getNamedItem("size").getNodeValue());
+
+                if (type.equals("input")) {
+                    inputFiles.add(new File(fileId, size));
+                } else {
+                    outputFiles.add(new File(fileId, size));
+                    fileMap.put(fileId, size);
+                    fileToOwner.computeIfAbsent(fileId, key -> new ArrayList<>());
+                    fileToOwner.get(fileId).add(id);
+                }
+            }
+            jobs.add(new Job(id, runtime, inputFiles, outputFiles, fileMap));
+        }
+
+        // Parse child-parent relationship part
+        Map<Integer, List<Integer>> childToParents = new HashMap<>();
+        Map<Integer, List<Integer>> parentToChildren = new HashMap<>();
+
+        NodeList childNodes = workflowDax.getElementsByTagName("child");
+
+        for (int i = 0; i < childNodes.getLength(); i++) {
+            Node childNode = childNodes.item(i);
+            NamedNodeMap attributes = childNode.getAttributes();
+            int childId = Integer.parseInt(attributes.getNamedItem("ref").getNodeValue().substring(2)) + 1 + startId;
+
+            NodeList parentNodes = ((Element) childNode).getElementsByTagName("parent");
+            for (int j = 0; j < parentNodes.getLength(); j++) {
+                Node parentNode = parentNodes.item(j);
+                NamedNodeMap parentAttributes = parentNode.getAttributes();
+                int parentId = Integer.parseInt(parentAttributes.getNamedItem("ref").getNodeValue().substring(2)) + 1 + startId;
+
+                // Connect child to its parent
+                childToParents.computeIfAbsent(childId, k -> new ArrayList<>());
+                childToParents.get(childId).add(parentId);
+
+                // Connect parent to its child
+                parentToChildren.computeIfAbsent(parentId, k -> new ArrayList<>());
+                parentToChildren.get(parentId).add(childId);
+            }
+        }
+
+        List<Task> tasks = new ArrayList<>();
+        for (Job job : jobs) {
+            var task = new Task(
+                    job.getId(),
+                    job.getRuntime(),
+                    1,
+                    job.getInputFiles().stream().map(File::getSize).reduce(1L, Long::sum),
+                    job.getOutputFiles().stream().map(File::getSize).reduce(1L, Long::sum),
+                    new UtilizationModelFull(),
+                    new UtilizationModelFull(),
+                    new UtilizationModelFull(),
+                    job.getInputFiles().stream().flatMap(f -> fileToOwner.getOrDefault(f.getId(), List.of(job.getId())).stream().map(owner -> new Data(f.getId(), owner, job.getId(), f.getSize()))).collect(Collectors.toList()),
+                    Double.MAX_VALUE,
+                    0,
+                    workflowName,
+                    new FractionalSelectivity(1),
+                    new PeriodicExecutionModel(1),
+                    null,
+                    null,
+                    null
+            );
+
+            List<Pair<Integer, String>> neededFilesPair = task.getInputFiles().stream().map(data -> Pair.of(data.getSrcTaskId(), data.getFileName())).collect(Collectors.toList());
+
+            Map<Integer, List<String>> neededFiles = new HashMap<>();
+            neededFilesPair.forEach(pair -> {
+                neededFiles.computeIfAbsent(pair.getFirst(), k -> new ArrayList<>());
+
+                neededFiles.get(pair.getFirst()).add(pair.getSecond());
+            });
+
+            task.setParents(new HashSet<>(childToParents.getOrDefault(task.getTaskId(), new ArrayList<>())));
+            task.setChildren(parentToChildren.getOrDefault(task.getTaskId(), new ArrayList<>()));
+
+            task.setFileMap(job.getFileMap());
+            task.setNeededFromParent(neededFiles);
+
+            tasks.add(task);
+        }
+
+        return new Pair<Workflow, Integer> (new Workflow(tasks, workflowName), jobNodes.getLength());
     }
 }

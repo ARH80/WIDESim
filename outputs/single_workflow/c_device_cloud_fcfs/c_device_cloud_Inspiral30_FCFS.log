@@ -1,0 +1,1045 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+
+> Task :Inspiral30.main()
+Initialising...
+Starting CloudSim version 3.0
+[0.00]|[FogDevice(2|cloud_device_0)]: Starting FogDevice(2)...
+[0.00]|[FogDevice(3|phone)]: Starting FogDevice(3)...
+[0.00]|[FogDevice(4|camera)]: Starting FogDevice(4)...
+[0.00]|[FogDevice(5|car)]: Starting FogDevice(5)...
+[0.00]|[FogDevice(6|drone)]: Starting FogDevice(6)...
+[0.00]|[FogBroker(7)]: Starting FogBroker...
+[0.00]|[WorkflowEngine(8)]: Starting WorkflowEngine...
+[0.00]|[TaskManager(9)]: Starting Task Manager...
+[0.00]|[TaskManager(9)]: Sending task: 1 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 2 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 3 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 4 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 5 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 6 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 7 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 8 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 9 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 10 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 11 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 12 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 13 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 14 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 15 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 16 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 17 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 18 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 19 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 20 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 21 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 22 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 23 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 24 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 25 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 26 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 27 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 28 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 29 of workflow: Inspiral_30.xml
+[0.00]|[TaskManager(9)]: Sending task: 30 of workflow: Inspiral_30.xml
+Entities started.
+[0.00]|[FogBroker(7)]: Requesting for fog devices characteristics...
+[0.00]|[WorkflowEngine(8)]: Task(1) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Sending Task(1) from workflow(Inspiral_30.xml)...
+[0.00]|[WorkflowEngine(8)]: Task(2) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Sending Task(2) from workflow(Inspiral_30.xml)...
+[0.00]|[WorkflowEngine(8)]: Task(3) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Sending Task(3) from workflow(Inspiral_30.xml)...
+[0.00]|[WorkflowEngine(8)]: Task(4) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Sending Task(4) from workflow(Inspiral_30.xml)...
+[0.00]|[WorkflowEngine(8)]: Task(5) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Sending Task(5) from workflow(Inspiral_30.xml)...
+[0.00]|[WorkflowEngine(8)]: Task(6) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Sending Task(6) from workflow(Inspiral_30.xml)...
+[0.00]|[WorkflowEngine(8)]: Task(7) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Sending Task(7) from workflow(Inspiral_30.xml)...
+[0.00]|[WorkflowEngine(8)]: Task(8) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(8) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(9) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(9) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(10) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(10) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(11) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(11) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(12) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(12) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(13) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(13) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(14) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(14) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(15) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(15) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(16) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(16) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(17) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(17) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(18) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(18) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(19) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(19) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(20) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(20) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(21) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(21) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(22) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(22) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(23) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(23) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(24) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(24) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(25) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(25) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(26) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(26) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(27) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(27) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(28) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(28) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(29) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(29) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[WorkflowEngine(8)]: Task(30) of workflow(Inspiral_30.xml) received
+[0.00]|[WorkflowEngine(8)]: Task(30) is not ready to get executed. Adding it to waiting queue...
+[0.00]|[FogBroker(7)]: Task(1) of Workflow(Inspiral_30.xml) received
+[0.00]|[FogBroker(7)]: Dispatching tasks...
+[0.00]|[FogBroker(7)]: Task(2) of Workflow(Inspiral_30.xml) received
+[0.00]|[FogBroker(7)]: Dispatching tasks...
+[0.00]|[FogBroker(7)]: Task(3) of Workflow(Inspiral_30.xml) received
+[0.00]|[FogBroker(7)]: Dispatching tasks...
+[0.00]|[FogBroker(7)]: Task(4) of Workflow(Inspiral_30.xml) received
+[0.00]|[FogBroker(7)]: Dispatching tasks...
+[0.00]|[FogBroker(7)]: Task(5) of Workflow(Inspiral_30.xml) received
+[0.00]|[FogBroker(7)]: Dispatching tasks...
+[0.00]|[FogBroker(7)]: Task(6) of Workflow(Inspiral_30.xml) received
+[0.00]|[FogBroker(7)]: Dispatching tasks...
+[0.00]|[FogBroker(7)]: Task(7) of Workflow(Inspiral_30.xml) received
+[0.00]|[FogBroker(7)]: Dispatching tasks...
+[0.00]|[FogBroker(7)]: All resources received
+[0.00]|[FogBroker(7)]: All pending vm create acks received
+[0.00]|[FogBroker(7)]: Dispatching tasks...
+[0.00]|[FogBroker(7)]: Sending STAGE_IN data for Task(1) to FogDevice(2) with delay: 0.11
+[0.00]|[FogBroker(7)]: Sending STAGE_IN data for Task(2) to FogDevice(3) with delay: 0.11
+[0.00]|[FogBroker(7)]: Sending STAGE_IN data for Task(3) to FogDevice(4) with delay: 0.11
+[0.00]|[FogBroker(7)]: Sending STAGE_IN data for Task(4) to FogDevice(5) with delay: 0.11
+[0.00]|[FogBroker(7)]: Sending STAGE_IN data for Task(5) to FogDevice(6) with delay: 0.11
+[0.11]|[FogDevice(2|cloud_device_0)]: Received Task(1) from Workflow(Inspiral_30.xml) with STAGE_IN data to run on Vm(0)
+[0.11]|[FogDevice(3|phone)]: Received Task(2) from Workflow(Inspiral_30.xml) with STAGE_IN data to run on Vm(1)
+[0.11]|[FogDevice(4|camera)]: Received Task(3) from Workflow(Inspiral_30.xml) with STAGE_IN data to run on Vm(2)
+[0.11]|[FogDevice(5|car)]: Received Task(4) from Workflow(Inspiral_30.xml) with STAGE_IN data to run on Vm(3)
+[0.11]|[FogDevice(6|drone)]: Received Task(5) from Workflow(Inspiral_30.xml) with STAGE_IN data to run on Vm(4)
+[0.11]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(1) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[0.11]|[FogDevice(2|cloud_device_0)]: All parent data for Task(1) are received. task can execute
+[0.11]|[FogDevice(3|phone)]: Received execute msg for Task(2) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(1)
+[0.11]|[FogDevice(3|phone)]: All parent data for Task(2) are received. task can execute
+[0.11]|[FogDevice(4|camera)]: Received execute msg for Task(3) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(2)
+[0.11]|[FogDevice(4|camera)]: All parent data for Task(3) are received. task can execute
+[0.11]|[FogDevice(5|car)]: Received execute msg for Task(4) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(3)
+[0.11]|[FogDevice(5|car)]: All parent data for Task(4) are received. task can execute
+[0.11]|[FogDevice(6|drone)]: Received execute msg for Task(5) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(4)
+[0.11]|[FogDevice(6|drone)]: All parent data for Task(5) are received. task can execute
+0.11: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+0.11: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+0.11: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+0.11: [Host #0] MIPS for VM #1 by PEs (2 * 500.0). PE #0: 500.00.
+0.11: [Host #0] Total allocated MIPS for VM #2 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+0.11: [Host #0] MIPS for VM #2 by PEs (1 * 500.0). PE #0: 500.00.
+0.11: [Host #0] Total allocated MIPS for VM #3 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+0.11: [Host #0] MIPS for VM #3 by PEs (1 * 500.0). PE #0: 500.00.
+0.11: [Host #0] Total allocated MIPS for VM #4 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+0.11: [Host #0] MIPS for VM #4 by PEs (1 * 500.0). PE #0: 500.00.
+[0.11]|[FogBroker(7)]: Task(1) ack: true
+[0.11]|[FogBroker(7)]: Task(2) ack: true
+[0.11]|[FogBroker(7)]: Task(3) ack: true
+[0.11]|[FogBroker(7)]: Task(4) ack: true
+[0.11]|[FogBroker(7)]: Task(5) ack: true
+3.08: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+3.08: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[3.08]|[FogBroker(7)]: Received task completion msg for Task(1) from FogDevice(2)
+[3.08]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(1)...
+[3.08]|[FogBroker(7)]: Task(1) on Cycle(0) decided to generate data: true
+[3.08]|[FogBroker(7)]: All dispatched tasks are complete
+[3.08]|[FogBroker(7)]: There is no vm to destroy
+[3.08]|[FogBroker(7)]: There is no vm to create
+[3.08]|[FogBroker(7)]: Trying to dispatch tasks...
+[3.08]|[FogBroker(7)]: Dispatching tasks...
+[3.08]|[FogBroker(7)]: Sending STAGE_IN data for Task(6) to FogDevice(2) with delay: 0.00
+[3.08]|[FogDevice(2|cloud_device_0)]: Received Task(6) from Workflow(Inspiral_30.xml) with STAGE_IN data to run on Vm(0)
+[3.08]|[WorkflowEngine(8)]: Task(1) received as complete
+[3.08]|[WorkflowEngine(8)]: Task(8) is now ready to get executed. Releasing it...
+[3.08]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(6) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[3.08]|[FogDevice(2|cloud_device_0)]: All parent data for Task(6) are received. task can execute
+[3.08]|[FogBroker(7)]: Task(8) of Workflow(Inspiral_30.xml) received
+[3.08]|[FogBroker(7)]: Dispatching tasks...
+[3.08]|[FogBroker(7)]: Task(6) ack: true
+6.01: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+6.01: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[6.01]|[FogBroker(7)]: Received task completion msg for Task(6) from FogDevice(2)
+[6.01]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(6)...
+[6.01]|[FogBroker(7)]: Task(6) on Cycle(0) decided to generate data: true
+[6.01]|[FogBroker(7)]: All dispatched tasks are complete
+[6.01]|[FogBroker(7)]: There is no vm to destroy
+[6.01]|[FogBroker(7)]: There is no vm to create
+[6.01]|[FogBroker(7)]: Trying to dispatch tasks...
+[6.01]|[FogBroker(7)]: Dispatching tasks...
+[6.01]|[FogBroker(7)]: Sending STAGE_IN data for Task(7) to FogDevice(2) with delay: 0.00
+[6.01]|[FogDevice(2|cloud_device_0)]: Received Task(7) from Workflow(Inspiral_30.xml) with STAGE_IN data to run on Vm(0)
+[6.01]|[WorkflowEngine(8)]: Task(6) received as complete
+[6.01]|[WorkflowEngine(8)]: Task(13) is now ready to get executed. Releasing it...
+[6.01]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(7) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[6.01]|[FogDevice(2|cloud_device_0)]: All parent data for Task(7) are received. task can execute
+[6.01]|[FogBroker(7)]: Task(13) of Workflow(Inspiral_30.xml) received
+[6.01]|[FogBroker(7)]: Dispatching tasks...
+[6.01]|[FogBroker(7)]: Task(7) ack: true
+9.05: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+9.05: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[9.05]|[FogBroker(7)]: Received task completion msg for Task(7) from FogDevice(2)
+[9.05]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(7)...
+[9.05]|[FogBroker(7)]: Task(7) on Cycle(0) decided to generate data: true
+[9.05]|[FogBroker(7)]: All dispatched tasks are complete
+[9.05]|[FogBroker(7)]: There is no vm to destroy
+[9.05]|[FogBroker(7)]: There is no vm to create
+[9.05]|[FogBroker(7)]: Trying to dispatch tasks...
+[9.05]|[FogBroker(7)]: Dispatching tasks...
+[9.05]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(1) on Cycle(0)
+[9.05]|[FogBroker(7)]: Asking FogDevice(2) to execute Task(8) on Cycle(0)
+[9.05]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(1) on Cycle(0): (true) and destination is a loop back: sending data instantly
+[9.05]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(8) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[9.05]|[FogDevice(2|cloud_device_0)]: Not all parent data are available. task is added to waiting queue
+[9.05]|[WorkflowEngine(8)]: Task(7) received as complete
+[9.05]|[WorkflowEngine(8)]: Task(14) is now ready to get executed. Releasing it...
+[9.05]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(1) on Cycle(0)
+[9.05]|[FogDevice(2|cloud_device_0)]: Data is for me
+[9.05]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(1) -> true
+[9.05]|[FogDevice(2|cloud_device_0)]: Found Task(8) from Workflow(Inspiral_30.xml) that can be executed
+[9.05]|[FogBroker(7)]: Task(14) of Workflow(Inspiral_30.xml) received
+[9.05]|[FogBroker(7)]: Dispatching tasks...
+[9.05]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(8) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[9.05]|[FogDevice(2|cloud_device_0)]: All parent data for Task(8) are received. task can execute
+[9.05]|[FogBroker(7)]: Task(8) ack: true
+35.35: [Host #0] Total allocated MIPS for VM #2 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+35.35: [Host #0] MIPS for VM #2 by PEs (1 * 500.0). PE #0: 500.00.
+[35.35]|[FogBroker(7)]: Received task completion msg for Task(3) from FogDevice(4)
+[35.35]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(3)...
+[35.35]|[FogBroker(7)]: Task(3) on Cycle(0) decided to generate data: true
+[35.35]|[FogBroker(7)]: All dispatched tasks are complete
+[35.35]|[FogBroker(7)]: There is no vm to destroy
+[35.35]|[FogBroker(7)]: There is no vm to create
+[35.35]|[FogBroker(7)]: Trying to dispatch tasks...
+[35.35]|[FogBroker(7)]: Dispatching tasks...
+[35.35]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(6) on Cycle(0)
+[35.35]|[FogBroker(7)]: Asking FogDevice(4) to execute Task(13) on Cycle(0)
+[35.35]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(6) on Cycle(0) to FogDevice(4)
+[35.35]|[FogDevice(2|cloud_device_0)]: Sending data of Task(6) on Cycle(0) to FogDevice(4) with Delay(9.723642578125E-4)
+[35.35]|[FogDevice(4|camera)]: Received execute msg for Task(13) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(2)
+[35.35]|[FogDevice(4|camera)]: Not all parent data are available. task is added to waiting queue
+[35.35]|[WorkflowEngine(8)]: Task(3) received as complete
+[35.35]|[WorkflowEngine(8)]: Task(10) is now ready to get executed. Releasing it...
+[35.35]|[FogBroker(7)]: Task(10) of Workflow(Inspiral_30.xml) received
+[35.35]|[FogBroker(7)]: Dispatching tasks...
+[35.35]|[FogDevice(4|camera)]: Downloading data from fog device: 2
+[35.35]|[FogDevice(4|camera)]: Downloaded data of Task(6) on Cycle(0)
+[35.35]|[FogDevice(4|camera)]: Data is for me
+[35.35]|[FogDevice(4|camera)]: Updating received data with: Cycle(0): Task(6) -> true
+[35.35]|[FogDevice(4|camera)]: Found Task(13) from Workflow(Inspiral_30.xml) that can be executed
+[35.35]|[FogDevice(4|camera)]: Received execute msg for Task(13) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(2)
+[35.35]|[FogDevice(4|camera)]: All parent data for Task(13) are received. task can execute
+[35.35]|[FogBroker(7)]: Task(13) ack: true
+35.61: [Host #0] Total allocated MIPS for VM #3 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+35.61: [Host #0] MIPS for VM #3 by PEs (1 * 500.0). PE #0: 500.00.
+[35.61]|[FogBroker(7)]: Received task completion msg for Task(4) from FogDevice(5)
+[35.61]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(4)...
+[35.61]|[FogBroker(7)]: Task(4) on Cycle(0) decided to generate data: true
+[35.61]|[FogBroker(7)]: All dispatched tasks are complete
+[35.61]|[FogBroker(7)]: There is no vm to destroy
+[35.61]|[FogBroker(7)]: There is no vm to create
+[35.61]|[FogBroker(7)]: Trying to dispatch tasks...
+[35.61]|[FogBroker(7)]: Dispatching tasks...
+[35.61]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(7) on Cycle(0)
+[35.61]|[FogBroker(7)]: Asking FogDevice(5) to execute Task(14) on Cycle(0)
+[35.61]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(7) on Cycle(0) to FogDevice(5)
+[35.61]|[FogDevice(2|cloud_device_0)]: Sending data of Task(7) on Cycle(0) to FogDevice(5) with Delay(9.552880859375E-4)
+[35.61]|[FogDevice(5|car)]: Received execute msg for Task(14) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(3)
+[35.61]|[FogDevice(5|car)]: Not all parent data are available. task is added to waiting queue
+[35.61]|[WorkflowEngine(8)]: Task(4) received as complete
+[35.61]|[WorkflowEngine(8)]: Task(11) is now ready to get executed. Releasing it...
+[35.61]|[FogBroker(7)]: Task(11) of Workflow(Inspiral_30.xml) received
+[35.61]|[FogBroker(7)]: Dispatching tasks...
+[35.61]|[FogDevice(5|car)]: Downloading data from fog device: 2
+[35.61]|[FogDevice(5|car)]: Downloaded data of Task(7) on Cycle(0)
+[35.61]|[FogDevice(5|car)]: Data is for me
+[35.61]|[FogDevice(5|car)]: Updating received data with: Cycle(0): Task(7) -> true
+[35.61]|[FogDevice(5|car)]: Found Task(14) from Workflow(Inspiral_30.xml) that can be executed
+[35.61]|[FogDevice(5|car)]: Received execute msg for Task(14) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(3)
+[35.61]|[FogDevice(5|car)]: All parent data for Task(14) are received. task can execute
+[35.61]|[FogBroker(7)]: Task(14) ack: true
+36.05: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+36.05: [Host #0] MIPS for VM #1 by PEs (2 * 500.0). PE #0: 500.00.
+[36.05]|[FogBroker(7)]: Received task completion msg for Task(2) from FogDevice(3)
+[36.05]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(2)...
+[36.05]|[FogBroker(7)]: Task(2) on Cycle(0) decided to generate data: true
+[36.05]|[FogBroker(7)]: All dispatched tasks are complete
+[36.05]|[FogBroker(7)]: There is no vm to destroy
+[36.05]|[FogBroker(7)]: There is no vm to create
+[36.05]|[FogBroker(7)]: Trying to dispatch tasks...
+[36.05]|[FogBroker(7)]: Dispatching tasks...
+[36.05]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(4) for Task(3) on Cycle(0)
+[36.05]|[FogBroker(7)]: Asking FogDevice(3) to execute Task(10) on Cycle(0)
+[36.05]|[FogDevice(3|phone)]: Received execute msg for Task(10) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(1)
+[36.05]|[FogDevice(3|phone)]: Not all parent data are available. task is added to waiting queue
+[36.05]|[FogDevice(4|camera)]: Received STAGE_OUT data of Task(3) on Cycle(0) to FogDevice(3)
+[36.05]|[FogDevice(4|camera)]: Sending data of Task(3) on Cycle(0) to FogDevice(3) with Delay(9.5929296875E-4)
+[36.05]|[WorkflowEngine(8)]: Task(2) received as complete
+[36.05]|[WorkflowEngine(8)]: Task(9) is now ready to get executed. Releasing it...
+[36.05]|[FogBroker(7)]: Task(9) of Workflow(Inspiral_30.xml) received
+[36.05]|[FogBroker(7)]: Dispatching tasks...
+[36.05]|[FogDevice(3|phone)]: Downloading data from fog device: 4
+[36.05]|[FogDevice(3|phone)]: Downloaded data of Task(3) on Cycle(0)
+[36.05]|[FogDevice(3|phone)]: Data is for me
+[36.05]|[FogDevice(3|phone)]: Updating received data with: Cycle(0): Task(3) -> true
+[36.05]|[FogDevice(3|phone)]: Found Task(10) from Workflow(Inspiral_30.xml) that can be executed
+[36.05]|[FogDevice(3|phone)]: Received execute msg for Task(10) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(1)
+[36.05]|[FogDevice(3|phone)]: All parent data for Task(10) are received. task can execute
+[36.05]|[FogBroker(7)]: Task(10) ack: true
+36.21: [Host #0] Total allocated MIPS for VM #4 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+36.21: [Host #0] MIPS for VM #4 by PEs (1 * 500.0). PE #0: 500.00.
+[36.21]|[FogBroker(7)]: Received task completion msg for Task(5) from FogDevice(6)
+[36.21]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(5)...
+[36.21]|[FogBroker(7)]: Task(5) on Cycle(0) decided to generate data: true
+[36.21]|[FogBroker(7)]: All dispatched tasks are complete
+[36.21]|[FogBroker(7)]: There is no vm to destroy
+[36.21]|[FogBroker(7)]: There is no vm to create
+[36.21]|[FogBroker(7)]: Trying to dispatch tasks...
+[36.21]|[FogBroker(7)]: Dispatching tasks...
+[36.21]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(5) for Task(4) on Cycle(0)
+[36.21]|[FogBroker(7)]: Asking FogDevice(6) to execute Task(11) on Cycle(0)
+[36.21]|[FogDevice(5|car)]: Received STAGE_OUT data of Task(4) on Cycle(0) to FogDevice(6)
+[36.21]|[FogDevice(5|car)]: Sending data of Task(4) on Cycle(0) to FogDevice(6) with Delay(9.858408203125E-4)
+[36.21]|[FogDevice(6|drone)]: Received execute msg for Task(11) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(4)
+[36.21]|[FogDevice(6|drone)]: Not all parent data are available. task is added to waiting queue
+[36.21]|[WorkflowEngine(8)]: Task(5) received as complete
+[36.21]|[WorkflowEngine(8)]: Task(12) is now ready to get executed. Releasing it...
+[36.21]|[FogBroker(7)]: Task(12) of Workflow(Inspiral_30.xml) received
+[36.21]|[FogBroker(7)]: Dispatching tasks...
+[36.21]|[FogDevice(6|drone)]: Downloading data from fog device: 5
+[36.21]|[FogDevice(6|drone)]: Downloaded data of Task(4) on Cycle(0)
+[36.21]|[FogDevice(6|drone)]: Data is for me
+[36.21]|[FogDevice(6|drone)]: Updating received data with: Cycle(0): Task(4) -> true
+[36.21]|[FogDevice(6|drone)]: Found Task(11) from Workflow(Inspiral_30.xml) that can be executed
+[36.21]|[FogDevice(6|drone)]: Received execute msg for Task(11) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(4)
+[36.21]|[FogDevice(6|drone)]: All parent data for Task(11) are received. task can execute
+[36.21]|[FogBroker(7)]: Task(11) ack: true
+121.51: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+121.51: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[121.51]|[FogBroker(7)]: Received task completion msg for Task(8) from FogDevice(2)
+[121.51]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(8)...
+[121.51]|[FogBroker(7)]: Task(8) on Cycle(0) decided to generate data: true
+[121.51]|[FogBroker(7)]: All dispatched tasks are complete
+[121.51]|[FogBroker(7)]: There is no vm to destroy
+[121.51]|[FogBroker(7)]: There is no vm to create
+[121.51]|[FogBroker(7)]: Trying to dispatch tasks...
+[121.51]|[FogBroker(7)]: Dispatching tasks...
+[121.51]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(3) for Task(2) on Cycle(0)
+[121.51]|[FogBroker(7)]: Asking FogDevice(2) to execute Task(9) on Cycle(0)
+[121.51]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(9) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[121.51]|[FogDevice(2|cloud_device_0)]: Not all parent data are available. task is added to waiting queue
+[121.51]|[FogDevice(3|phone)]: Received STAGE_OUT data of Task(2) on Cycle(0) to FogDevice(2)
+[121.51]|[FogDevice(3|phone)]: Sending data of Task(2) on Cycle(0) to FogDevice(2) with Delay(9.608173828125E-4)
+[121.51]|[WorkflowEngine(8)]: Task(8) received as complete
+[121.51]|[FogDevice(2|cloud_device_0)]: Downloading data from fog device: 3
+[121.51]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(2) on Cycle(0)
+[121.51]|[FogDevice(2|cloud_device_0)]: Data is for me
+[121.51]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(2) -> true
+[121.51]|[FogDevice(2|cloud_device_0)]: Found Task(9) from Workflow(Inspiral_30.xml) that can be executed
+[121.51]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(9) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[121.51]|[FogDevice(2|cloud_device_0)]: All parent data for Task(9) are received. task can execute
+[121.51]|[FogBroker(7)]: Task(9) ack: true
+179.88: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+179.88: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[179.88]|[FogBroker(7)]: Received task completion msg for Task(9) from FogDevice(2)
+[179.88]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(9)...
+[179.88]|[FogBroker(7)]: Task(9) on Cycle(0) decided to generate data: true
+[179.88]|[FogBroker(7)]: All dispatched tasks are complete
+[179.88]|[FogBroker(7)]: There is no vm to destroy
+[179.88]|[FogBroker(7)]: There is no vm to create
+[179.88]|[FogBroker(7)]: Trying to dispatch tasks...
+[179.88]|[FogBroker(7)]: Dispatching tasks...
+[179.88]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(6) for Task(5) on Cycle(0)
+[179.88]|[FogBroker(7)]: Asking FogDevice(2) to execute Task(12) on Cycle(0)
+[179.88]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(12) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[179.88]|[FogDevice(2|cloud_device_0)]: Not all parent data are available. task is added to waiting queue
+[179.88]|[FogDevice(6|drone)]: Received STAGE_OUT data of Task(5) on Cycle(0) to FogDevice(2)
+[179.88]|[FogDevice(6|drone)]: Sending data of Task(5) on Cycle(0) to FogDevice(2) with Delay(9.66357421875E-4)
+[179.88]|[WorkflowEngine(8)]: Task(9) received as complete
+[179.88]|[FogDevice(2|cloud_device_0)]: Downloading data from fog device: 6
+[179.88]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(5) on Cycle(0)
+[179.88]|[FogDevice(2|cloud_device_0)]: Data is for me
+[179.88]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(5) -> true
+[179.88]|[FogDevice(2|cloud_device_0)]: Found Task(12) from Workflow(Inspiral_30.xml) that can be executed
+[179.88]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(12) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[179.88]|[FogDevice(2|cloud_device_0)]: All parent data for Task(12) are received. task can execute
+[179.88]|[FogBroker(7)]: Task(12) ack: true
+269.09: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+269.09: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[269.09]|[FogBroker(7)]: Received task completion msg for Task(12) from FogDevice(2)
+[269.09]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(12)...
+[269.09]|[FogBroker(7)]: Task(12) on Cycle(0) decided to generate data: true
+[269.09]|[FogBroker(7)]: All dispatched tasks are complete
+[269.09]|[FogBroker(7)]: There is no vm to destroy
+[269.09]|[FogBroker(7)]: There is no vm to create
+[269.09]|[FogBroker(7)]: Trying to dispatch tasks...
+[269.09]|[FogBroker(7)]: Dispatching tasks...
+[269.09]|[WorkflowEngine(8)]: Task(12) received as complete
+699.53: [Host #0] Total allocated MIPS for VM #2 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+699.53: [Host #0] MIPS for VM #2 by PEs (1 * 500.0). PE #0: 500.00.
+[699.53]|[FogBroker(7)]: Received task completion msg for Task(13) from FogDevice(4)
+[699.53]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(13)...
+[699.53]|[FogBroker(7)]: Task(13) on Cycle(0) decided to generate data: true
+[699.53]|[FogBroker(7)]: All dispatched tasks are complete
+[699.53]|[FogBroker(7)]: There is no vm to destroy
+[699.53]|[FogBroker(7)]: There is no vm to create
+[699.53]|[FogBroker(7)]: Trying to dispatch tasks...
+[699.53]|[FogBroker(7)]: Dispatching tasks...
+[699.53]|[WorkflowEngine(8)]: Task(13) received as complete
+723.83: [Host #0] Total allocated MIPS for VM #3 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+723.83: [Host #0] MIPS for VM #3 by PEs (1 * 500.0). PE #0: 500.00.
+[723.83]|[FogBroker(7)]: Received task completion msg for Task(14) from FogDevice(5)
+[723.83]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(14)...
+[723.83]|[FogBroker(7)]: Task(14) on Cycle(0) decided to generate data: true
+[723.83]|[FogBroker(7)]: All dispatched tasks are complete
+[723.83]|[FogBroker(7)]: There is no vm to destroy
+[723.83]|[FogBroker(7)]: There is no vm to create
+[723.83]|[FogBroker(7)]: Trying to dispatch tasks...
+[723.83]|[FogBroker(7)]: Dispatching tasks...
+[723.83]|[WorkflowEngine(8)]: Task(14) received as complete
+1074.59: [Host #0] Total allocated MIPS for VM #4 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+1074.59: [Host #0] MIPS for VM #4 by PEs (1 * 500.0). PE #0: 500.00.
+[1074.59]|[FogBroker(7)]: Received task completion msg for Task(11) from FogDevice(6)
+[1074.59]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(11)...
+[1074.59]|[FogBroker(7)]: Task(11) on Cycle(0) decided to generate data: true
+[1074.59]|[FogBroker(7)]: All dispatched tasks are complete
+[1074.59]|[FogBroker(7)]: There is no vm to destroy
+[1074.59]|[FogBroker(7)]: There is no vm to create
+[1074.59]|[FogBroker(7)]: Trying to dispatch tasks...
+[1074.59]|[FogBroker(7)]: Dispatching tasks...
+[1074.59]|[WorkflowEngine(8)]: Task(11) received as complete
+1225.31: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+1225.31: [Host #0] MIPS for VM #1 by PEs (2 * 500.0). PE #0: 500.00.
+[1225.31]|[FogBroker(7)]: Received task completion msg for Task(10) from FogDevice(3)
+[1225.31]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(10)...
+[1225.31]|[FogBroker(7)]: Task(10) on Cycle(0) decided to generate data: true
+[1225.31]|[FogBroker(7)]: All dispatched tasks are complete
+[1225.31]|[FogBroker(7)]: There is no vm to destroy
+[1225.31]|[FogBroker(7)]: There is no vm to create
+[1225.31]|[FogBroker(7)]: Trying to dispatch tasks...
+[1225.31]|[FogBroker(7)]: Dispatching tasks...
+[1225.31]|[WorkflowEngine(8)]: Task(10) received as complete
+[1225.31]|[WorkflowEngine(8)]: Task(15) is now ready to get executed. Releasing it...
+[1225.31]|[FogBroker(7)]: Task(15) of Workflow(Inspiral_30.xml) received
+[1225.31]|[FogBroker(7)]: Dispatching tasks...
+[1225.31]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(8) on Cycle(0)
+[1225.31]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(9) on Cycle(0)
+[1225.31]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(3) for Task(10) on Cycle(0)
+[1225.31]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(6) for Task(11) on Cycle(0)
+[1225.31]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(12) on Cycle(0)
+[1225.31]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(4) for Task(13) on Cycle(0)
+[1225.31]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(5) for Task(14) on Cycle(0)
+[1225.31]|[FogBroker(7)]: Asking FogDevice(2) to execute Task(15) on Cycle(0)
+[1225.31]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(8) on Cycle(0): (true) and destination is a loop back: sending data instantly
+[1225.31]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(9) on Cycle(0): (true) and destination is a loop back: sending data instantly
+[1225.31]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(12) on Cycle(0): (true) and destination is a loop back: sending data instantly
+[1225.31]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(15) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[1225.31]|[FogDevice(2|cloud_device_0)]: Not all parent data are available. task is added to waiting queue
+[1225.31]|[FogDevice(3|phone)]: Received STAGE_OUT data of Task(10) on Cycle(0) to FogDevice(2)
+[1225.31]|[FogDevice(3|phone)]: Sending data of Task(10) on Cycle(0) to FogDevice(2) with Delay(3.931650390625E-4)
+[1225.31]|[FogDevice(4|camera)]: Received STAGE_OUT data of Task(13) on Cycle(0) to FogDevice(2)
+[1225.31]|[FogDevice(4|camera)]: Sending data of Task(13) on Cycle(0) to FogDevice(2) with Delay(2.688623046875E-4)
+[1225.31]|[FogDevice(5|car)]: Received STAGE_OUT data of Task(14) on Cycle(0) to FogDevice(2)
+[1225.31]|[FogDevice(5|car)]: Sending data of Task(14) on Cycle(0) to FogDevice(2) with Delay(4.007412109375E-4)
+[1225.31]|[FogDevice(6|drone)]: Received STAGE_OUT data of Task(11) on Cycle(0) to FogDevice(2)
+[1225.31]|[FogDevice(6|drone)]: Sending data of Task(11) on Cycle(0) to FogDevice(2) with Delay(2.229033203125E-4)
+[1225.31]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(8) on Cycle(0)
+[1225.31]|[FogDevice(2|cloud_device_0)]: Data is for me
+[1225.31]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(8) -> true
+[1225.31]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(9) on Cycle(0)
+[1225.31]|[FogDevice(2|cloud_device_0)]: Data is for me
+[1225.31]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(9) -> true
+[1225.31]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(12) on Cycle(0)
+[1225.31]|[FogDevice(2|cloud_device_0)]: Data is for me
+[1225.31]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(12) -> true
+[1225.31]|[FogDevice(2|cloud_device_0)]: Downloading data from fog device: 6
+[1225.31]|[FogDevice(2|cloud_device_0)]: Downloading data from fog device: 4
+[1225.31]|[FogDevice(2|cloud_device_0)]: Downloading data from fog device: 3
+[1225.31]|[FogDevice(2|cloud_device_0)]: Downloading data from fog device: 5
+[1225.31]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(11) on Cycle(0)
+[1225.31]|[FogDevice(2|cloud_device_0)]: Data is for me
+[1225.31]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(11) -> true
+[1225.31]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(13) on Cycle(0)
+[1225.31]|[FogDevice(2|cloud_device_0)]: Data is for me
+[1225.31]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(13) -> true
+[1225.31]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(10) on Cycle(0)
+[1225.31]|[FogDevice(2|cloud_device_0)]: Data is for me
+[1225.31]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(10) -> true
+[1225.31]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(14) on Cycle(0)
+[1225.31]|[FogDevice(2|cloud_device_0)]: Data is for me
+[1225.31]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(14) -> true
+[1225.31]|[FogDevice(2|cloud_device_0)]: Found Task(15) from Workflow(Inspiral_30.xml) that can be executed
+[1225.31]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(15) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[1225.31]|[FogDevice(2|cloud_device_0)]: All parent data for Task(15) are received. task can execute
+1225.31: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+1225.31: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[1225.31]|[FogBroker(7)]: Task(15) ack: true
+1226.25: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+1226.25: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[1226.25]|[FogBroker(7)]: Received task completion msg for Task(15) from FogDevice(2)
+[1226.25]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(15)...
+[1226.25]|[FogBroker(7)]: Task(15) on Cycle(0) decided to generate data: true
+[1226.25]|[FogBroker(7)]: All dispatched tasks are complete
+[1226.25]|[FogBroker(7)]: There is no vm to destroy
+[1226.25]|[FogBroker(7)]: There is no vm to create
+[1226.25]|[FogBroker(7)]: Trying to dispatch tasks...
+[1226.25]|[FogBroker(7)]: Dispatching tasks...
+[1226.25]|[WorkflowEngine(8)]: Task(15) received as complete
+[1226.25]|[WorkflowEngine(8)]: Task(16) is now ready to get executed. Releasing it...
+[1226.25]|[WorkflowEngine(8)]: Task(17) is now ready to get executed. Releasing it...
+[1226.25]|[WorkflowEngine(8)]: Task(18) is now ready to get executed. Releasing it...
+[1226.25]|[WorkflowEngine(8)]: Task(19) is now ready to get executed. Releasing it...
+[1226.25]|[WorkflowEngine(8)]: Task(20) is now ready to get executed. Releasing it...
+[1226.25]|[WorkflowEngine(8)]: Task(21) is now ready to get executed. Releasing it...
+[1226.25]|[WorkflowEngine(8)]: Task(22) is now ready to get executed. Releasing it...
+[1226.25]|[FogBroker(7)]: Task(16) of Workflow(Inspiral_30.xml) received
+[1226.25]|[FogBroker(7)]: Dispatching tasks...
+[1226.25]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(15) on Cycle(0)
+[1226.25]|[FogBroker(7)]: Asking FogDevice(2) to execute Task(16) on Cycle(0)
+[1226.25]|[FogBroker(7)]: Task(17) of Workflow(Inspiral_30.xml) received
+[1226.25]|[FogBroker(7)]: Dispatching tasks...
+[1226.25]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(15) on Cycle(0)
+[1226.25]|[FogBroker(7)]: Asking FogDevice(3) to execute Task(17) on Cycle(0)
+[1226.25]|[FogBroker(7)]: Task(18) of Workflow(Inspiral_30.xml) received
+[1226.25]|[FogBroker(7)]: Dispatching tasks...
+[1226.25]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(15) on Cycle(0)
+[1226.25]|[FogBroker(7)]: Asking FogDevice(4) to execute Task(18) on Cycle(0)
+[1226.25]|[FogBroker(7)]: Task(19) of Workflow(Inspiral_30.xml) received
+[1226.25]|[FogBroker(7)]: Dispatching tasks...
+[1226.25]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(15) on Cycle(0)
+[1226.25]|[FogBroker(7)]: Asking FogDevice(5) to execute Task(19) on Cycle(0)
+[1226.25]|[FogBroker(7)]: Task(20) of Workflow(Inspiral_30.xml) received
+[1226.25]|[FogBroker(7)]: Dispatching tasks...
+[1226.25]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(15) on Cycle(0)
+[1226.25]|[FogBroker(7)]: Asking FogDevice(6) to execute Task(20) on Cycle(0)
+[1226.25]|[FogBroker(7)]: Task(21) of Workflow(Inspiral_30.xml) received
+[1226.25]|[FogBroker(7)]: Dispatching tasks...
+[1226.25]|[FogBroker(7)]: Task(22) of Workflow(Inspiral_30.xml) received
+[1226.25]|[FogBroker(7)]: Dispatching tasks...
+[1226.25]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(15) on Cycle(0): (true) and destination is a loop back: sending data instantly
+[1226.25]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(16) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[1226.25]|[FogDevice(2|cloud_device_0)]: Not all parent data are available. task is added to waiting queue
+[1226.25]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(15) on Cycle(0) to FogDevice(3)
+[1226.25]|[FogDevice(2|cloud_device_0)]: Sending data of Task(15) on Cycle(0) to FogDevice(3) with Delay(4.0306640625E-5)
+[1226.25]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(15) on Cycle(0) to FogDevice(4)
+[1226.25]|[FogDevice(2|cloud_device_0)]: Sending data of Task(15) on Cycle(0) to FogDevice(4) with Delay(4.0306640625E-5)
+[1226.25]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(15) on Cycle(0) to FogDevice(5)
+[1226.25]|[FogDevice(2|cloud_device_0)]: Sending data of Task(15) on Cycle(0) to FogDevice(5) with Delay(4.0306640625E-5)
+[1226.25]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(15) on Cycle(0) to FogDevice(6)
+[1226.25]|[FogDevice(2|cloud_device_0)]: Sending data of Task(15) on Cycle(0) to FogDevice(6) with Delay(4.0306640625E-5)
+[1226.25]|[FogDevice(3|phone)]: Received execute msg for Task(17) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(1)
+[1226.25]|[FogDevice(3|phone)]: Not all parent data are available. task is added to waiting queue
+[1226.25]|[FogDevice(4|camera)]: Received execute msg for Task(18) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(2)
+[1226.25]|[FogDevice(4|camera)]: Not all parent data are available. task is added to waiting queue
+[1226.25]|[FogDevice(5|car)]: Received execute msg for Task(19) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(3)
+[1226.25]|[FogDevice(5|car)]: Not all parent data are available. task is added to waiting queue
+[1226.25]|[FogDevice(6|drone)]: Received execute msg for Task(20) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(4)
+[1226.25]|[FogDevice(6|drone)]: Not all parent data are available. task is added to waiting queue
+[1226.25]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(15) on Cycle(0)
+[1226.25]|[FogDevice(2|cloud_device_0)]: Data is for me
+[1226.25]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(15) -> true
+[1226.25]|[FogDevice(2|cloud_device_0)]: Found Task(16) from Workflow(Inspiral_30.xml) that can be executed
+[1226.25]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(16) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[1226.25]|[FogDevice(2|cloud_device_0)]: All parent data for Task(16) are received. task can execute
+[1226.25]|[FogBroker(7)]: Task(16) ack: true
+[1226.25]|[FogDevice(3|phone)]: Downloading data from fog device: 2
+[1226.25]|[FogDevice(4|camera)]: Downloading data from fog device: 2
+[1226.25]|[FogDevice(3|phone)]: Downloaded data of Task(15) on Cycle(0)
+[1226.25]|[FogDevice(3|phone)]: Data is for me
+[1226.25]|[FogDevice(3|phone)]: Updating received data with: Cycle(0): Task(15) -> true
+[1226.25]|[FogDevice(3|phone)]: Found Task(17) from Workflow(Inspiral_30.xml) that can be executed
+[1226.25]|[FogDevice(3|phone)]: Received execute msg for Task(17) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(1)
+[1226.25]|[FogDevice(3|phone)]: All parent data for Task(17) are received. task can execute
+1226.25: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+1226.25: [Host #0] MIPS for VM #1 by PEs (2 * 500.0). PE #0: 500.00.
+[1226.25]|[FogBroker(7)]: Task(17) ack: true
+[1226.25]|[FogDevice(5|car)]: Downloading data from fog device: 2
+[1226.25]|[FogDevice(4|camera)]: Downloaded data of Task(15) on Cycle(0)
+[1226.25]|[FogDevice(4|camera)]: Data is for me
+[1226.25]|[FogDevice(4|camera)]: Updating received data with: Cycle(0): Task(15) -> true
+[1226.25]|[FogDevice(4|camera)]: Found Task(18) from Workflow(Inspiral_30.xml) that can be executed
+[1226.25]|[FogDevice(4|camera)]: Received execute msg for Task(18) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(2)
+[1226.25]|[FogDevice(4|camera)]: All parent data for Task(18) are received. task can execute
+1226.25: [Host #0] Total allocated MIPS for VM #2 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+1226.25: [Host #0] MIPS for VM #2 by PEs (1 * 500.0). PE #0: 500.00.
+[1226.25]|[FogBroker(7)]: Task(18) ack: true
+[1226.25]|[FogDevice(6|drone)]: Downloading data from fog device: 2
+[1226.25]|[FogDevice(5|car)]: Downloaded data of Task(15) on Cycle(0)
+[1226.25]|[FogDevice(5|car)]: Data is for me
+[1226.25]|[FogDevice(5|car)]: Updating received data with: Cycle(0): Task(15) -> true
+[1226.25]|[FogDevice(5|car)]: Found Task(19) from Workflow(Inspiral_30.xml) that can be executed
+[1226.25]|[FogDevice(5|car)]: Received execute msg for Task(19) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(3)
+[1226.25]|[FogDevice(5|car)]: All parent data for Task(19) are received. task can execute
+1226.25: [Host #0] Total allocated MIPS for VM #3 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+1226.25: [Host #0] MIPS for VM #3 by PEs (1 * 500.0). PE #0: 500.00.
+[1226.25]|[FogBroker(7)]: Task(19) ack: true
+[1226.25]|[FogDevice(6|drone)]: Downloaded data of Task(15) on Cycle(0)
+[1226.25]|[FogDevice(6|drone)]: Data is for me
+[1226.25]|[FogDevice(6|drone)]: Updating received data with: Cycle(0): Task(15) -> true
+[1226.25]|[FogDevice(6|drone)]: Found Task(20) from Workflow(Inspiral_30.xml) that can be executed
+[1226.25]|[FogDevice(6|drone)]: Received execute msg for Task(20) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(4)
+[1226.25]|[FogDevice(6|drone)]: All parent data for Task(20) are received. task can execute
+1226.25: [Host #0] Total allocated MIPS for VM #4 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+1226.25: [Host #0] MIPS for VM #4 by PEs (1 * 500.0). PE #0: 500.00.
+[1226.25]|[FogBroker(7)]: Task(20) ack: true
+1227.21: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+1227.21: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[1227.21]|[FogBroker(7)]: Received task completion msg for Task(16) from FogDevice(2)
+[1227.21]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(16)...
+[1227.21]|[FogBroker(7)]: Task(16) on Cycle(0) decided to generate data: true
+[1227.21]|[FogBroker(7)]: All dispatched tasks are complete
+[1227.21]|[FogBroker(7)]: There is no vm to destroy
+[1227.21]|[FogBroker(7)]: There is no vm to create
+[1227.21]|[FogBroker(7)]: Trying to dispatch tasks...
+[1227.21]|[FogBroker(7)]: Dispatching tasks...
+[1227.21]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(15) on Cycle(0)
+[1227.21]|[FogBroker(7)]: Asking FogDevice(2) to execute Task(21) on Cycle(0)
+[1227.21]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(15) on Cycle(0): (true) and destination is a loop back: sending data instantly
+[1227.21]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(21) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[1227.21]|[FogDevice(2|cloud_device_0)]: All parent data for Task(21) are received. task can execute
+[1227.21]|[WorkflowEngine(8)]: Task(16) received as complete
+[1227.21]|[WorkflowEngine(8)]: Task(23) is now ready to get executed. Releasing it...
+[1227.21]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(15) on Cycle(0)
+[1227.21]|[FogDevice(2|cloud_device_0)]: Data is for me
+[1227.21]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(15) -> true
+[1227.21]|[FogBroker(7)]: Task(23) of Workflow(Inspiral_30.xml) received
+[1227.21]|[FogBroker(7)]: Dispatching tasks...
+[1227.21]|[FogBroker(7)]: Task(21) ack: true
+1228.10: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+1228.10: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[1228.10]|[FogBroker(7)]: Received task completion msg for Task(21) from FogDevice(2)
+[1228.10]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(21)...
+[1228.10]|[FogBroker(7)]: Task(21) on Cycle(0) decided to generate data: true
+[1228.10]|[FogBroker(7)]: All dispatched tasks are complete
+[1228.10]|[FogBroker(7)]: There is no vm to destroy
+[1228.10]|[FogBroker(7)]: There is no vm to create
+[1228.10]|[FogBroker(7)]: Trying to dispatch tasks...
+[1228.10]|[FogBroker(7)]: Dispatching tasks...
+[1228.10]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(15) on Cycle(0)
+[1228.10]|[FogBroker(7)]: Asking FogDevice(2) to execute Task(22) on Cycle(0)
+[1228.10]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(15) on Cycle(0): (true) and destination is a loop back: sending data instantly
+[1228.10]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(22) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[1228.10]|[FogDevice(2|cloud_device_0)]: All parent data for Task(22) are received. task can execute
+[1228.10]|[WorkflowEngine(8)]: Task(21) received as complete
+[1228.10]|[WorkflowEngine(8)]: Task(28) is now ready to get executed. Releasing it...
+[1228.10]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(15) on Cycle(0)
+[1228.10]|[FogDevice(2|cloud_device_0)]: Data is for me
+[1228.10]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(15) -> true
+[1228.10]|[FogBroker(7)]: Task(28) of Workflow(Inspiral_30.xml) received
+[1228.10]|[FogBroker(7)]: Dispatching tasks...
+[1228.10]|[FogBroker(7)]: Task(22) ack: true
+1228.98: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+1228.98: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[1228.98]|[FogBroker(7)]: Received task completion msg for Task(22) from FogDevice(2)
+[1228.98]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(22)...
+[1228.98]|[FogBroker(7)]: Task(22) on Cycle(0) decided to generate data: true
+[1228.98]|[FogBroker(7)]: All dispatched tasks are complete
+[1228.98]|[FogBroker(7)]: There is no vm to destroy
+[1228.98]|[FogBroker(7)]: There is no vm to create
+[1228.98]|[FogBroker(7)]: Trying to dispatch tasks...
+[1228.98]|[FogBroker(7)]: Dispatching tasks...
+[1228.98]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(16) on Cycle(0)
+[1228.98]|[FogBroker(7)]: Asking FogDevice(2) to execute Task(23) on Cycle(0)
+[1228.98]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(16) on Cycle(0): (true) and destination is a loop back: sending data instantly
+[1228.98]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(23) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[1228.98]|[FogDevice(2|cloud_device_0)]: Not all parent data are available. task is added to waiting queue
+[1228.98]|[WorkflowEngine(8)]: Task(22) received as complete
+[1228.98]|[WorkflowEngine(8)]: Task(29) is now ready to get executed. Releasing it...
+[1228.98]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(16) on Cycle(0)
+[1228.98]|[FogDevice(2|cloud_device_0)]: Data is for me
+[1228.98]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(16) -> true
+[1228.98]|[FogDevice(2|cloud_device_0)]: Found Task(23) from Workflow(Inspiral_30.xml) that can be executed
+[1228.98]|[FogBroker(7)]: Task(29) of Workflow(Inspiral_30.xml) received
+[1228.98]|[FogBroker(7)]: Dispatching tasks...
+[1228.98]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(23) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[1228.98]|[FogDevice(2|cloud_device_0)]: All parent data for Task(23) are received. task can execute
+[1228.98]|[FogBroker(7)]: Task(23) ack: true
+1236.11: [Host #0] Total allocated MIPS for VM #2 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+1236.11: [Host #0] MIPS for VM #2 by PEs (1 * 500.0). PE #0: 500.00.
+[1236.11]|[FogBroker(7)]: Received task completion msg for Task(18) from FogDevice(4)
+[1236.11]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(18)...
+[1236.11]|[FogBroker(7)]: Task(18) on Cycle(0) decided to generate data: true
+[1236.11]|[FogBroker(7)]: All dispatched tasks are complete
+[1236.11]|[FogBroker(7)]: There is no vm to destroy
+[1236.11]|[FogBroker(7)]: There is no vm to create
+[1236.11]|[FogBroker(7)]: Trying to dispatch tasks...
+[1236.11]|[FogBroker(7)]: Dispatching tasks...
+[1236.11]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(21) on Cycle(0)
+[1236.11]|[FogBroker(7)]: Asking FogDevice(4) to execute Task(28) on Cycle(0)
+[1236.11]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(21) on Cycle(0) to FogDevice(4)
+[1236.11]|[FogDevice(2|cloud_device_0)]: Sending data of Task(21) on Cycle(0) to FogDevice(4) with Delay(6.67578125E-6)
+[1236.11]|[FogDevice(4|camera)]: Received execute msg for Task(28) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(2)
+[1236.11]|[FogDevice(4|camera)]: Not all parent data are available. task is added to waiting queue
+[1236.11]|[WorkflowEngine(8)]: Task(18) received as complete
+[1236.11]|[WorkflowEngine(8)]: Task(25) is now ready to get executed. Releasing it...
+[1236.11]|[FogBroker(7)]: Task(25) of Workflow(Inspiral_30.xml) received
+[1236.11]|[FogBroker(7)]: Dispatching tasks...
+[1236.11]|[FogDevice(4|camera)]: Downloading data from fog device: 2
+[1236.11]|[FogDevice(4|camera)]: Downloaded data of Task(21) on Cycle(0)
+[1236.11]|[FogDevice(4|camera)]: Data is for me
+[1236.11]|[FogDevice(4|camera)]: Updating received data with: Cycle(0): Task(21) -> true
+[1236.11]|[FogDevice(4|camera)]: Found Task(28) from Workflow(Inspiral_30.xml) that can be executed
+[1236.11]|[FogDevice(4|camera)]: Received execute msg for Task(28) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(2)
+[1236.11]|[FogDevice(4|camera)]: All parent data for Task(28) are received. task can execute
+[1236.11]|[FogBroker(7)]: Task(28) ack: true
+1236.21: [Host #0] Total allocated MIPS for VM #4 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+1236.21: [Host #0] MIPS for VM #4 by PEs (1 * 500.0). PE #0: 500.00.
+[1236.21]|[FogBroker(7)]: Received task completion msg for Task(20) from FogDevice(6)
+[1236.21]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(20)...
+[1236.21]|[FogBroker(7)]: Task(20) on Cycle(0) decided to generate data: true
+[1236.21]|[FogBroker(7)]: All dispatched tasks are complete
+[1236.21]|[FogBroker(7)]: There is no vm to destroy
+[1236.21]|[FogBroker(7)]: There is no vm to create
+[1236.21]|[FogBroker(7)]: Trying to dispatch tasks...
+[1236.21]|[FogBroker(7)]: Dispatching tasks...
+[1236.21]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(22) on Cycle(0)
+[1236.21]|[FogBroker(7)]: Asking FogDevice(6) to execute Task(29) on Cycle(0)
+[1236.21]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(22) on Cycle(0) to FogDevice(6)
+[1236.21]|[FogDevice(2|cloud_device_0)]: Sending data of Task(22) on Cycle(0) to FogDevice(6) with Delay(1.56484375E-5)
+[1236.21]|[FogDevice(6|drone)]: Received execute msg for Task(29) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(4)
+[1236.21]|[FogDevice(6|drone)]: Not all parent data are available. task is added to waiting queue
+[1236.21]|[WorkflowEngine(8)]: Task(20) received as complete
+[1236.21]|[WorkflowEngine(8)]: Task(27) is now ready to get executed. Releasing it...
+[1236.21]|[FogBroker(7)]: Task(27) of Workflow(Inspiral_30.xml) received
+[1236.21]|[FogBroker(7)]: Dispatching tasks...
+[1236.21]|[FogDevice(6|drone)]: Downloading data from fog device: 2
+[1236.21]|[FogDevice(6|drone)]: Downloaded data of Task(22) on Cycle(0)
+[1236.21]|[FogDevice(6|drone)]: Data is for me
+[1236.21]|[FogDevice(6|drone)]: Updating received data with: Cycle(0): Task(22) -> true
+[1236.21]|[FogDevice(6|drone)]: Found Task(29) from Workflow(Inspiral_30.xml) that can be executed
+[1236.21]|[FogDevice(6|drone)]: Received execute msg for Task(29) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(4)
+[1236.21]|[FogDevice(6|drone)]: All parent data for Task(29) are received. task can execute
+[1236.21]|[FogBroker(7)]: Task(29) ack: true
+1236.77: [Host #0] Total allocated MIPS for VM #3 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+1236.77: [Host #0] MIPS for VM #3 by PEs (1 * 500.0). PE #0: 500.00.
+[1236.77]|[FogBroker(7)]: Received task completion msg for Task(19) from FogDevice(5)
+[1236.77]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(19)...
+[1236.77]|[FogBroker(7)]: Task(19) on Cycle(0) decided to generate data: true
+[1236.77]|[FogBroker(7)]: All dispatched tasks are complete
+[1236.77]|[FogBroker(7)]: There is no vm to destroy
+[1236.77]|[FogBroker(7)]: There is no vm to create
+[1236.77]|[FogBroker(7)]: Trying to dispatch tasks...
+[1236.77]|[FogBroker(7)]: Dispatching tasks...
+[1236.77]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(4) for Task(18) on Cycle(0)
+[1236.77]|[FogBroker(7)]: Asking FogDevice(5) to execute Task(25) on Cycle(0)
+[1236.77]|[FogDevice(4|camera)]: Received STAGE_OUT data of Task(18) on Cycle(0) to FogDevice(5)
+[1236.77]|[FogDevice(4|camera)]: Sending data of Task(18) on Cycle(0) to FogDevice(5) with Delay(1.5927734375E-5)
+[1236.77]|[FogDevice(5|car)]: Received execute msg for Task(25) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(3)
+[1236.77]|[FogDevice(5|car)]: Not all parent data are available. task is added to waiting queue
+[1236.77]|[WorkflowEngine(8)]: Task(19) received as complete
+[1236.77]|[WorkflowEngine(8)]: Task(26) is now ready to get executed. Releasing it...
+[1236.77]|[FogBroker(7)]: Task(26) of Workflow(Inspiral_30.xml) received
+[1236.77]|[FogBroker(7)]: Dispatching tasks...
+[1236.77]|[FogDevice(5|car)]: Downloading data from fog device: 4
+[1236.77]|[FogDevice(5|car)]: Downloaded data of Task(18) on Cycle(0)
+[1236.77]|[FogDevice(5|car)]: Data is for me
+[1236.77]|[FogDevice(5|car)]: Updating received data with: Cycle(0): Task(18) -> true
+[1236.77]|[FogDevice(5|car)]: Found Task(25) from Workflow(Inspiral_30.xml) that can be executed
+[1236.77]|[FogDevice(5|car)]: Received execute msg for Task(25) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(3)
+[1236.77]|[FogDevice(5|car)]: All parent data for Task(25) are received. task can execute
+[1236.77]|[FogBroker(7)]: Task(25) ack: true
+1237.11: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+1237.11: [Host #0] MIPS for VM #1 by PEs (2 * 500.0). PE #0: 500.00.
+[1237.11]|[FogBroker(7)]: Received task completion msg for Task(17) from FogDevice(3)
+[1237.11]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(17)...
+[1237.11]|[FogBroker(7)]: Task(17) on Cycle(0) decided to generate data: true
+[1237.11]|[FogBroker(7)]: All dispatched tasks are complete
+[1237.11]|[FogBroker(7)]: There is no vm to destroy
+[1237.11]|[FogBroker(7)]: There is no vm to create
+[1237.11]|[FogBroker(7)]: Trying to dispatch tasks...
+[1237.11]|[FogBroker(7)]: Dispatching tasks...
+[1237.11]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(6) for Task(20) on Cycle(0)
+[1237.11]|[FogBroker(7)]: Asking FogDevice(3) to execute Task(27) on Cycle(0)
+[1237.11]|[FogDevice(3|phone)]: Received execute msg for Task(27) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(1)
+[1237.11]|[FogDevice(3|phone)]: Not all parent data are available. task is added to waiting queue
+[1237.11]|[FogDevice(6|drone)]: Received STAGE_OUT data of Task(20) on Cycle(0) to FogDevice(3)
+[1237.11]|[FogDevice(6|drone)]: Sending data of Task(20) on Cycle(0) to FogDevice(5) with Delay(6.3486328125E-6)
+[1237.11]|[WorkflowEngine(8)]: Task(17) received as complete
+[1237.11]|[WorkflowEngine(8)]: Task(24) is now ready to get executed. Releasing it...
+[1237.11]|[FogBroker(7)]: Task(24) of Workflow(Inspiral_30.xml) received
+[1237.11]|[FogBroker(7)]: Dispatching tasks...
+[1237.11]|[FogDevice(5|car)]: Downloading data from fog device: 6
+[1237.11]|[FogDevice(5|car)]: Downloaded data of Task(20) on Cycle(0)
+[1237.11]|[FogDevice(5|car)]: Data is not for me. relaying the message
+[1237.11]|[FogDevice(3|phone)]: Downloading data from fog device: 5
+[1237.11]|[FogDevice(3|phone)]: Downloaded data of Task(20) on Cycle(0)
+[1237.11]|[FogDevice(3|phone)]: Data is for me
+[1237.11]|[FogDevice(3|phone)]: Updating received data with: Cycle(0): Task(20) -> true
+[1237.11]|[FogDevice(3|phone)]: Found Task(27) from Workflow(Inspiral_30.xml) that can be executed
+[1237.11]|[FogDevice(3|phone)]: Received execute msg for Task(27) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(1)
+[1237.11]|[FogDevice(3|phone)]: All parent data for Task(27) are received. task can execute
+[1237.11]|[FogBroker(7)]: Task(27) ack: true
+1333.38: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+1333.38: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[1333.38]|[FogBroker(7)]: Received task completion msg for Task(23) from FogDevice(2)
+[1333.38]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(23)...
+[1333.38]|[FogBroker(7)]: Task(23) on Cycle(0) decided to generate data: true
+[1333.38]|[FogBroker(7)]: All dispatched tasks are complete
+[1333.38]|[FogBroker(7)]: There is no vm to destroy
+[1333.38]|[FogBroker(7)]: There is no vm to create
+[1333.38]|[FogBroker(7)]: Trying to dispatch tasks...
+[1333.38]|[FogBroker(7)]: Dispatching tasks...
+[1333.38]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(5) for Task(19) on Cycle(0)
+[1333.38]|[FogBroker(7)]: Asking FogDevice(2) to execute Task(26) on Cycle(0)
+[1333.38]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(26) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[1333.38]|[FogDevice(2|cloud_device_0)]: Not all parent data are available. task is added to waiting queue
+[1333.38]|[FogDevice(5|car)]: Received STAGE_OUT data of Task(19) on Cycle(0) to FogDevice(2)
+[1333.38]|[FogDevice(5|car)]: Sending data of Task(19) on Cycle(0) to FogDevice(2) with Delay(8.1142578125E-6)
+[1333.38]|[WorkflowEngine(8)]: Task(23) received as complete
+[1333.38]|[FogDevice(2|cloud_device_0)]: Downloading data from fog device: 5
+[1333.38]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(19) on Cycle(0)
+[1333.38]|[FogDevice(2|cloud_device_0)]: Data is for me
+[1333.38]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(19) -> true
+[1333.38]|[FogDevice(2|cloud_device_0)]: Found Task(26) from Workflow(Inspiral_30.xml) that can be executed
+[1333.38]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(26) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[1333.38]|[FogDevice(2|cloud_device_0)]: All parent data for Task(26) are received. task can execute
+[1333.38]|[FogBroker(7)]: Task(26) ack: true
+1375.98: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+1375.98: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[1375.98]|[FogBroker(7)]: Received task completion msg for Task(26) from FogDevice(2)
+[1375.98]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(26)...
+[1375.98]|[FogBroker(7)]: Task(26) on Cycle(0) decided to generate data: true
+[1375.98]|[FogBroker(7)]: All dispatched tasks are complete
+[1375.98]|[FogBroker(7)]: There is no vm to destroy
+[1375.98]|[FogBroker(7)]: There is no vm to create
+[1375.98]|[FogBroker(7)]: Trying to dispatch tasks...
+[1375.98]|[FogBroker(7)]: Dispatching tasks...
+[1375.98]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(3) for Task(17) on Cycle(0)
+[1375.98]|[FogBroker(7)]: Asking FogDevice(2) to execute Task(24) on Cycle(0)
+[1375.98]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(24) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[1375.98]|[FogDevice(2|cloud_device_0)]: Not all parent data are available. task is added to waiting queue
+[1375.98]|[FogDevice(3|phone)]: Received STAGE_OUT data of Task(17) on Cycle(0) to FogDevice(2)
+[1375.98]|[FogDevice(3|phone)]: Sending data of Task(17) on Cycle(0) to FogDevice(2) with Delay(1.4951171875E-5)
+[1375.98]|[WorkflowEngine(8)]: Task(26) received as complete
+[1375.98]|[FogDevice(2|cloud_device_0)]: Downloading data from fog device: 3
+[1375.98]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(17) on Cycle(0)
+[1375.98]|[FogDevice(2|cloud_device_0)]: Data is for me
+[1375.98]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(17) -> true
+[1375.98]|[FogDevice(2|cloud_device_0)]: Found Task(24) from Workflow(Inspiral_30.xml) that can be executed
+[1375.98]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(24) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[1375.98]|[FogDevice(2|cloud_device_0)]: All parent data for Task(24) are received. task can execute
+[1375.98]|[FogBroker(7)]: Task(24) ack: true
+1478.11: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+1478.11: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[1478.11]|[FogBroker(7)]: Received task completion msg for Task(24) from FogDevice(2)
+[1478.11]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(24)...
+[1478.11]|[FogBroker(7)]: Task(24) on Cycle(0) decided to generate data: true
+[1478.11]|[FogBroker(7)]: All dispatched tasks are complete
+[1478.11]|[FogBroker(7)]: There is no vm to destroy
+[1478.11]|[FogBroker(7)]: There is no vm to create
+[1478.11]|[FogBroker(7)]: Trying to dispatch tasks...
+[1478.11]|[FogBroker(7)]: Dispatching tasks...
+[1478.11]|[WorkflowEngine(8)]: Task(24) received as complete
+1848.51: [Host #0] Total allocated MIPS for VM #1 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+1848.51: [Host #0] MIPS for VM #1 by PEs (2 * 500.0). PE #0: 500.00.
+[1848.51]|[FogBroker(7)]: Received task completion msg for Task(27) from FogDevice(3)
+[1848.51]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(27)...
+[1848.51]|[FogBroker(7)]: Task(27) on Cycle(0) decided to generate data: true
+[1848.51]|[FogBroker(7)]: All dispatched tasks are complete
+[1848.51]|[FogBroker(7)]: There is no vm to destroy
+[1848.51]|[FogBroker(7)]: There is no vm to create
+[1848.51]|[FogBroker(7)]: Trying to dispatch tasks...
+[1848.51]|[FogBroker(7)]: Dispatching tasks...
+[1848.51]|[WorkflowEngine(8)]: Task(27) received as complete
+1966.53: [Host #0] Total allocated MIPS for VM #4 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+1966.53: [Host #0] MIPS for VM #4 by PEs (1 * 500.0). PE #0: 500.00.
+[1966.53]|[FogBroker(7)]: Received task completion msg for Task(29) from FogDevice(6)
+[1966.53]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(29)...
+[1966.53]|[FogBroker(7)]: Task(29) on Cycle(0) decided to generate data: true
+[1966.53]|[FogBroker(7)]: All dispatched tasks are complete
+[1966.53]|[FogBroker(7)]: There is no vm to destroy
+[1966.53]|[FogBroker(7)]: There is no vm to create
+[1966.53]|[FogBroker(7)]: Trying to dispatch tasks...
+[1966.53]|[FogBroker(7)]: Dispatching tasks...
+[1966.53]|[WorkflowEngine(8)]: Task(29) received as complete
+2073.55: [Host #0] Total allocated MIPS for VM #3 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+2073.55: [Host #0] MIPS for VM #3 by PEs (1 * 500.0). PE #0: 500.00.
+[2073.55]|[FogBroker(7)]: Received task completion msg for Task(25) from FogDevice(5)
+[2073.55]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(25)...
+[2073.55]|[FogBroker(7)]: Task(25) on Cycle(0) decided to generate data: true
+[2073.55]|[FogBroker(7)]: All dispatched tasks are complete
+[2073.55]|[FogBroker(7)]: There is no vm to destroy
+[2073.55]|[FogBroker(7)]: There is no vm to create
+[2073.55]|[FogBroker(7)]: Trying to dispatch tasks...
+[2073.55]|[FogBroker(7)]: Dispatching tasks...
+[2073.55]|[WorkflowEngine(8)]: Task(25) received as complete
+2256.85: [Host #0] Total allocated MIPS for VM #2 (Host #0) is 500.00, was requested 0.00 out of total 500.00 (0.00%)
+2256.85: [Host #0] MIPS for VM #2 by PEs (1 * 500.0). PE #0: 500.00.
+[2256.85]|[FogBroker(7)]: Received task completion msg for Task(28) from FogDevice(4)
+[2256.85]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(28)...
+[2256.85]|[FogBroker(7)]: Task(28) on Cycle(0) decided to generate data: true
+[2256.85]|[FogBroker(7)]: All dispatched tasks are complete
+[2256.85]|[FogBroker(7)]: There is no vm to destroy
+[2256.85]|[FogBroker(7)]: There is no vm to create
+[2256.85]|[FogBroker(7)]: Trying to dispatch tasks...
+[2256.85]|[FogBroker(7)]: Dispatching tasks...
+[2256.85]|[WorkflowEngine(8)]: Task(28) received as complete
+[2256.85]|[WorkflowEngine(8)]: Task(30) is now ready to get executed. Releasing it...
+[2256.85]|[FogBroker(7)]: Task(30) of Workflow(Inspiral_30.xml) received
+[2256.85]|[FogBroker(7)]: Dispatching tasks...
+[2256.85]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(23) on Cycle(0)
+[2256.85]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(24) on Cycle(0)
+[2256.85]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(5) for Task(25) on Cycle(0)
+[2256.85]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(2) for Task(26) on Cycle(0)
+[2256.85]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(3) for Task(27) on Cycle(0)
+[2256.85]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(4) for Task(28) on Cycle(0)
+[2256.85]|[FogBroker(7)]: Sending STAGE_OUT_MSG to FogDevice(6) for Task(29) on Cycle(0)
+[2256.85]|[FogBroker(7)]: Asking FogDevice(2) to execute Task(30) on Cycle(0)
+[2256.85]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(23) on Cycle(0): (true) and destination is a loop back: sending data instantly
+[2256.85]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(24) on Cycle(0): (true) and destination is a loop back: sending data instantly
+[2256.85]|[FogDevice(2|cloud_device_0)]: Received STAGE_OUT data of Task(26) on Cycle(0): (true) and destination is a loop back: sending data instantly
+[2256.85]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(30) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[2256.85]|[FogDevice(2|cloud_device_0)]: Not all parent data are available. task is added to waiting queue
+[2256.85]|[FogDevice(3|phone)]: Received STAGE_OUT data of Task(27) on Cycle(0) to FogDevice(2)
+[2256.85]|[FogDevice(3|phone)]: Sending data of Task(27) on Cycle(0) to FogDevice(2) with Delay(2.72244140625E-4)
+[2256.85]|[FogDevice(4|camera)]: Received STAGE_OUT data of Task(28) on Cycle(0) to FogDevice(2)
+[2256.85]|[FogDevice(4|camera)]: Sending data of Task(28) on Cycle(0) to FogDevice(2) with Delay(3.864404296875E-4)
+[2256.85]|[FogDevice(5|car)]: Received STAGE_OUT data of Task(25) on Cycle(0) to FogDevice(2)
+[2256.85]|[FogDevice(5|car)]: Sending data of Task(25) on Cycle(0) to FogDevice(2) with Delay(3.013603515625E-4)
+[2256.85]|[FogDevice(6|drone)]: Received STAGE_OUT data of Task(29) on Cycle(0) to FogDevice(2)
+[2256.85]|[FogDevice(6|drone)]: Sending data of Task(29) on Cycle(0) to FogDevice(2) with Delay(3.593583984375E-4)
+[2256.85]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(23) on Cycle(0)
+[2256.85]|[FogDevice(2|cloud_device_0)]: Data is for me
+[2256.85]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(23) -> true
+[2256.85]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(24) on Cycle(0)
+[2256.85]|[FogDevice(2|cloud_device_0)]: Data is for me
+[2256.85]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(24) -> true
+[2256.85]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(26) on Cycle(0)
+[2256.85]|[FogDevice(2|cloud_device_0)]: Data is for me
+[2256.85]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(26) -> true
+[2256.85]|[FogDevice(2|cloud_device_0)]: Downloading data from fog device: 3
+[2256.85]|[FogDevice(2|cloud_device_0)]: Downloading data from fog device: 5
+[2256.85]|[FogDevice(2|cloud_device_0)]: Downloading data from fog device: 6
+[2256.85]|[FogDevice(2|cloud_device_0)]: Downloading data from fog device: 4
+[2256.85]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(27) on Cycle(0)
+[2256.85]|[FogDevice(2|cloud_device_0)]: Data is for me
+[2256.85]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(27) -> true
+[2256.85]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(25) on Cycle(0)
+[2256.85]|[FogDevice(2|cloud_device_0)]: Data is for me
+[2256.85]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(25) -> true
+[2256.85]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(29) on Cycle(0)
+[2256.85]|[FogDevice(2|cloud_device_0)]: Data is for me
+[2256.85]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(29) -> true
+[2256.85]|[FogDevice(2|cloud_device_0)]: Downloaded data of Task(28) on Cycle(0)
+[2256.85]|[FogDevice(2|cloud_device_0)]: Data is for me
+[2256.85]|[FogDevice(2|cloud_device_0)]: Updating received data with: Cycle(0): Task(28) -> true
+[2256.85]|[FogDevice(2|cloud_device_0)]: Found Task(30) from Workflow(Inspiral_30.xml) that can be executed
+[2256.85]|[FogDevice(2|cloud_device_0)]: Received execute msg for Task(30) on Cycle(0) from Workflow(Inspiral_30.xml) to run on Vm(0)
+[2256.85]|[FogDevice(2|cloud_device_0)]: All parent data for Task(30) are received. task can execute
+2256.85: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+2256.85: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[2256.85]|[FogBroker(7)]: Task(30) ack: true
+2257.66: [Host #0] Total allocated MIPS for VM #0 (Host #0) is 6000.00, was requested 0.00 out of total 6000.00 (0.00%)
+2257.66: [Host #0] MIPS for VM #0 by PEs (1 * 6000.0). PE #0: 6000.00.
+[2257.66]|[FogBroker(7)]: Received task completion msg for Task(30) from FogDevice(2)
+[2257.66]|[FogBroker(7)]: Notifying WorkflowEngine of completed Task(30)...
+[2257.66]|[FogBroker(7)]: Task(30) on Cycle(0) decided to generate data: true
+[2257.66]|[FogBroker(7)]: All dispatched tasks are complete
+[2257.66]|[FogBroker(7)]: There is no vm to destroy
+[2257.66]|[FogBroker(7)]: There is no vm to create
+[2257.66]|[FogBroker(7)]: Trying to dispatch tasks...
+[2257.66]|[FogBroker(7)]: Dispatching tasks...
+[2257.66]|[WorkflowEngine(8)]: Task(30) received as complete
+Simulation: No more future events
+CloudInformationService: Notify all CloudSim entities for shutting down.
+cloud_device_0 is shutting down...
+phone is shutting down...
+camera is shutting down...
+car is shutting down...
+drone is shutting down...
+[2257.66]|[WorkflowEngine(8)]: Shutting down entity...
+Simulation completed.
+Simulation completed.
+4941.176470588235
+333.3333333333333
+333.3333333333333
+333.3333333333333
+333.3333333333333
+Cycle: 0
+╔═════════╤═══════╤══════════════════════╤════════════════════╤══════════╗
+║ Task ID │ On Vm │ Start Execution Time │ End Execution Time │ Duration ║
+╠═════════╪═══════╪══════════════════════╪════════════════════╪══════════╣
+║ 1       │ 0     │ 0.11                 │ 3.08               │ 2.97     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 2       │ 1     │ 0.11                 │ 36.05              │ 35.94    ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 3       │ 2     │ 0.11                 │ 35.35              │ 35.24    ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 4       │ 3     │ 0.11                 │ 35.61              │ 35.50    ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 5       │ 4     │ 0.11                 │ 36.21              │ 36.10    ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 6       │ 0     │ 3.08                 │ 6.01               │ 2.93     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 7       │ 0     │ 6.01                 │ 9.05               │ 3.04     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 8       │ 0     │ 9.05                 │ 121.51             │ 112.46   ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 9       │ 0     │ 121.51               │ 179.88             │ 58.37    ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 10      │ 1     │ 36.05                │ 1225.31            │ 1189.26  ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 11      │ 4     │ 36.21                │ 1074.59            │ 1038.38  ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 12      │ 0     │ 179.88               │ 269.09             │ 89.20    ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 13      │ 2     │ 35.35                │ 699.53             │ 664.18   ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 14      │ 3     │ 35.61                │ 723.83             │ 688.22   ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 15      │ 0     │ 1225.31              │ 1226.25            │ 0.93     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 16      │ 0     │ 1226.25              │ 1227.21            │ 0.96     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 17      │ 1     │ 1226.25              │ 1237.11            │ 10.86    ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 18      │ 2     │ 1226.25              │ 1236.11            │ 9.86     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 19      │ 3     │ 1226.25              │ 1236.77            │ 10.52    ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 20      │ 4     │ 1226.25              │ 1236.21            │ 9.96     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 21      │ 0     │ 1227.21              │ 1228.10            │ 0.89     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 22      │ 0     │ 1228.10              │ 1228.98            │ 0.88     ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 23      │ 0     │ 1228.98              │ 1333.38            │ 104.40   ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 24      │ 0     │ 1375.98              │ 1478.11            │ 102.13   ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 25      │ 3     │ 1236.77              │ 2073.55            │ 836.78   ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 26      │ 0     │ 1333.38              │ 1375.98            │ 42.60    ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 27      │ 1     │ 1237.11              │ 1848.51            │ 611.40   ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 28      │ 2     │ 1236.11              │ 2256.85            │ 1020.74  ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 29      │ 4     │ 1236.21              │ 1966.53            │ 730.32   ║
+╟─────────┼───────┼──────────────────────┼────────────────────┼──────────╢
+║ 30      │ 0     │ 2256.85              │ 2257.66            │ 0.81     ║
+╚═════════╧═══════╧══════════════════════╧════════════════════╧══════════╝
+
+End Execution Time: 2257.658486424153
+
+BUILD SUCCESSFUL in 494ms
+3 actionable tasks: 1 executed, 2 up-to-date

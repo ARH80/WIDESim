@@ -116,7 +116,39 @@
   ],
   "vms": [
     {
-      "vm_id": 0
+      "vm_id": 0,
+      "fog_device_id": "cloud_device_0",
+      "ram": 1024,
+      "bw": 512,
+      "mips": 6000
+    },
+    {
+      "vm_id": 1,
+      "fog_device_id": "phone",
+      "ram": 64,
+      "bw": 4500,
+      "mips": 500
+    },
+    {
+      "vm_id": 2,
+      "fog_device_id": "camera",
+      "ram": 64,
+      "bw": 4500,
+      "mips": 500
+    },
+    {
+      "vm_id": 3,
+      "fog_device_id": "car",
+      "ram": 64,
+      "bw": 4500,
+      "mips": 500
+    },
+    {
+      "vm_id": 4,
+      "fog_device_id": "drone",
+      "ram": 64,
+      "bw": 4500,
+      "mips": 500
     }
   ]
 }
