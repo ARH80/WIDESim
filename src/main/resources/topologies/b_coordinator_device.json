@@ -216,48 +216,62 @@
     },
     {
       "vm_id": 1,
+      "fog_device_id": "edge_device_0",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 4000
+    },
+    {
+      "vm_id": 2,
+      "fog_device_id": "edge_device_1",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 4000
+    },
+    {
+      "vm_id": 3,
       "fog_device_id": "edge_and_end_device_0",
       "ram": 64,
       "bw": 5000,
       "mips": 500
     },
     {
-      "vm_id": 2,
+      "vm_id": 4,
       "fog_device_id": "edge_and_end_device_1",
       "ram": 64,
       "bw": 5000,
       "mips": 500
     },
     {
-      "vm_id": 3,
+      "vm_id": 5,
       "fog_device_id": "phone",
       "ram": 64,
       "bw": 5000,
       "mips": 500
     },
     {
-      "vm_id": 4,
+      "vm_id": 6,
       "fog_device_id": "camera",
       "ram": 64,
       "bw": 5000,
       "mips": 500
     },
     {
-      "vm_id": 5,
+      "vm_id": 7,
       "fog_device_id": "car",
       "ram": 64,
       "bw": 5000,
       "mips": 500
     },
     {
-      "vm_id": 6,
+      "vm_id": 8,
       "fog_device_id": "drone_0",
       "ram": 64,
       "bw": 5000,
       "mips": 500
     },
     {
-      "vm_id": 7,
+      "vm_id": 9,
       "fog_device_id": "drone_1",
       "ram": 64,
       "bw": 5000,
