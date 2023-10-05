@@ -3,8 +3,8 @@
     {
       "device_id": "cloud_device_0",
       "neighbors": [
-        { "neighbor_id": "edge_and_end_device_0" },
-        { "neighbor_id": "edge_and_end_device_1" }
+        { "neighbor_id": "edge_device_0" },
+        { "neighbor_id": "edge_device_1" }
       ],
       "hosts": [
         {
