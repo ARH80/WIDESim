@@ -233,14 +233,14 @@
       "fog_device_id": "edge_and_end_device_0",
       "ram": 64,
       "bw": 5000,
-      "mips": 500
+      "mips": 1500
     },
     {
       "vm_id": 4,
       "fog_device_id": "edge_and_end_device_1",
       "ram": 64,
       "bw": 5000,
-      "mips": 500
+      "mips": 1500
     },
     {
       "vm_id": 5,
