@@ -90,7 +90,8 @@
       "neighbors": [
         { "neighbor_id": "edge_and_end_device_0" },
         { "neighbor_id": "edge_device_1" },
-        { "neighbor_id": "drone" }
+        { "neighbor_id": "drone_0" },
+        { "neighbor_id": "drone_1" }
       ],
       "hosts": [
         {
