@@ -1,0 +1,951 @@
+{
+  "fog_devices": [
+    {
+      "device_id": "cloud_device_0",
+      "neighbors": [
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 1024,
+          "bw": 512,
+          "pes": [
+            {
+              "mips": 4000,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_0",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_1",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_2",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_3",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_4",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_5",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_6",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_7",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_8",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_9",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_10",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_11",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_12",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_13",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_14",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_15",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_16",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_17",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_18",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_11" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "device_id": "end_device_19",
+      "neighbors": [
+        { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_1" },
+        { "neighbor_id": "end_device_2" },
+        { "neighbor_id": "end_device_3" },
+        { "neighbor_id": "end_device_4" },
+        { "neighbor_id": "end_device_5" },
+        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_7" },
+        { "neighbor_id": "end_device_8" },
+        { "neighbor_id": "end_device_9" },
+        { "neighbor_id": "end_device_10" },
+        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_12" },
+        { "neighbor_id": "end_device_13" },
+        { "neighbor_id": "end_device_14" },
+        { "neighbor_id": "end_device_15" },
+        { "neighbor_id": "end_device_16" },
+        { "neighbor_id": "end_device_17" },
+        { "neighbor_id": "end_device_18" },
+        { "neighbor_id": "end_device_19" }
+      ],
+      "hosts": [
+        {
+          "host_id": 0,
+          "ram": 64,
+          "bw": 4000,
+          "pes": [
+           {
+              "mips": 100,
+              "pe_id": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "vms": [
+    {
+      "vm_id": 0,
+      "fog_device_id": "cloud_device_0",
+      "ram": 1024,
+      "bw": 512,
+      "mips": 6000
+    },
+    {
+      "vm_id": 1,
+      "fog_device_id": "end_device_0",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 2,
+      "fog_device_id": "end_device_1",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 3,
+      "fog_device_id": "end_device_2",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 4,
+      "fog_device_id": "end_device_3",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 5,
+      "fog_device_id": "end_device_4",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 6,
+      "fog_device_id": "end_device_5",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 7,
+      "fog_device_id": "end_device_6",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 8,
+      "fog_device_id": "end_device_7",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 9,
+      "fog_device_id": "end_device_8",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 10,
+      "fog_device_id": "end_device_9",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 11,
+      "fog_device_id": "end_device_10",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 12,
+      "fog_device_id": "end_device_11",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 13,
+      "fog_device_id": "end_device_12",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 14,
+      "fog_device_id": "end_device_13",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 15,
+      "fog_device_id": "end_device_14",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 16,
+      "fog_device_id": "end_device_15",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 17,
+      "fog_device_id": "end_device_16",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 18,
+      "fog_device_id": "end_device_17",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 19,
+      "fog_device_id": "end_device_18",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    },
+    {
+      "vm_id": 20,
+      "fog_device_id": "end_device_19",
+      "ram": 512,
+      "bw": 1000,
+      "mips": 100
+    }
+  ]
+}
