@@ -26,7 +26,7 @@ public class CyberShake100 {
         CloudSim.init(1, Calendar.getInstance(), false);
 
         // Parse topology
-        var topologyParser = new Parser(new File("src/main/resources/topologies/new_topology.json"));
+        var topologyParser = new Parser(new File("src/main/resources/topologies/b_coordinator_device_improved.json"));
         var deviceAndVms = topologyParser.parse();
 
         var fogDevices = deviceAndVms.getFirst();
@@ -64,16 +64,19 @@ public class CyberShake100 {
 
         CloudSim.stopSimulation();
 
+        int utilSize = 0;
         List<Task> tasks = fogBroker.getReceivedTasks();
         for (Vm vm : fogBroker.getVmList()) {
             PowerVm newvm = (PowerVm) vm;
-            // System.out.println(vm.getTotalUtilizationOfCpu(0));
-            // System.out.println(vm.get(0));
+            utilSize += newvm.getUtilizationMean();
             System.out.println(newvm.getUtilizationMean());
         }
+        
         IntStream.range(0, fogBroker.getMaximumCycle() + 1).forEach(cycle -> {
             System.out.println("Cycle: " + cycle);
+            Logger.printResultWorkflow(cycle, taskManager.workflows, fogBroker.getVmList());
             Logger.printResult(cycle, tasks, fogBroker.getVmToFogDevice(), fogDevices);
         });
+        System.out.println("Sum of utilizations: " + utilSize);
     }
 }
