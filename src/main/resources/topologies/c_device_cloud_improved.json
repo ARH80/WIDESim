@@ -275,7 +275,7 @@
         { "neighbor_id": "end_device_3" },
         { "neighbor_id": "end_device_4" },
         { "neighbor_id": "end_device_5" },
-        { "neighbor_id": "end_device_6" },
+        { "neighbor_id": "end_device_0" },
         { "neighbor_id": "end_device_7" },
         { "neighbor_id": "end_device_8" },
         { "neighbor_id": "end_device_9" },
@@ -764,6 +764,7 @@
       "device_id": "end_device_19",
       "neighbors": [
         { "neighbor_id": "cloud_device_0" },
+        { "neighbor_id": "end_device_0" },
         { "neighbor_id": "end_device_1" },
         { "neighbor_id": "end_device_2" },
         { "neighbor_id": "end_device_3" },
@@ -774,15 +775,14 @@
         { "neighbor_id": "end_device_8" },
         { "neighbor_id": "end_device_9" },
         { "neighbor_id": "end_device_10" },
-        { "neighbor_id": "end_device_0" },
+        { "neighbor_id": "end_device_11" },
         { "neighbor_id": "end_device_12" },
         { "neighbor_id": "end_device_13" },
         { "neighbor_id": "end_device_14" },
         { "neighbor_id": "end_device_15" },
         { "neighbor_id": "end_device_16" },
         { "neighbor_id": "end_device_17" },
-        { "neighbor_id": "end_device_18" },
-        { "neighbor_id": "end_device_19" }
+        { "neighbor_id": "end_device_18" }
       ],
       "hosts": [
         {
