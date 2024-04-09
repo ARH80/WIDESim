@@ -29,7 +29,7 @@ public class FifteenWorkflows {
         CloudSim.init(1, Calendar.getInstance(), false);
 
         // Parse topology
-        var topologyParser = new Parser(new File("src/main/resources/topologies/c_device_cloud.json"));
+        var topologyParser = new Parser(new File("src/main/resources/topologies/c_device_cloud_improved.json"));
         var deviceAndVms = topologyParser.parse();
 
         var fogDevices = deviceAndVms.getFirst();
@@ -92,16 +92,20 @@ public class FifteenWorkflows {
 
         CloudSim.stopSimulation();
 
+        int utilSize = 0;
         List<Task> tasks = fogBroker.getReceivedTasks();
         for (Vm vm : fogBroker.getVmList()) {
             PowerVm newvm = (PowerVm) vm;
+            utilSize += newvm.getUtilizationMean();
             System.out.println(newvm.getUtilizationMean());
         }
+        
         IntStream.range(0, fogBroker.getMaximumCycle() + 1).forEach(cycle -> {
             System.out.println("Cycle: " + cycle);
             Logger.printResultWorkflow(cycle, taskManager.workflows, fogBroker.getVmList());
             Logger.printResult(cycle, tasks, fogBroker.getVmToFogDevice(), fogDevices);
         });
+        System.out.println("Sum of utilizations: " + utilSize);
     }
     
 }

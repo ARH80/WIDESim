@@ -1,7 +1,6 @@
 package widesim.examples.ensemble_workflows;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Random;
@@ -47,7 +46,7 @@ public class EnsembleWorkflows {
         CloudSim.init(1, Calendar.getInstance(), false);
 
         // Parse topology
-        var topologyParser = new Parser(new File("src/main/resources/topologies/a_edge_server.json"));
+        var topologyParser = new Parser(new File("src/main/resources/topologies/c_device_cloud_improved.json"));
         var deviceAndVms = topologyParser.parse();
 
         var fogDevices = deviceAndVms.getFirst();
@@ -67,12 +66,12 @@ public class EnsembleWorkflows {
         });
         fogBroker.submitVmList(vms);
 
-        String wfName = "Sipht";
+        String wfName = "Montage";
         int simSize = 5;
 
         List<Integer> sizes = new ArrayList<>();
-        sizes.add(30);
-        sizes.add(60);
+        sizes.add(25);
+        sizes.add(50);
         sizes.add(100);
         sizes.add(1000);
 
